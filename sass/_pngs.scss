@@ -1,0 +1,15 @@
+// _pngs.scss 
+
+// Hide guts, show body png 
+
+.main-content, .more-deals, .footer {
+	display: none;
+}
+
+.body-image {
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}

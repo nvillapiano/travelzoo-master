@@ -1,0 +1,44 @@
+// _900.scss
+
+@media only screen and (max-width: 900px) {
+
+.footer {
+
+	nav {
+
+		.logo {
+			margin: 0 0 1rem 0;
+		}
+
+		ul {
+			top: 0.5rem;
+
+			li {
+
+				&:last-of-type {
+				    display: block;
+    				clear: both;
+    				margin: 1rem 0 0 3rem;
+				}				
+			}
+		}
+	}
+
+	.sub-footer {
+
+		.social-links {
+
+			a, a:hover, a:active, a:visited, a:link {
+
+				&:first-of-type {
+					margin: 0 0 1rem 0;
+				}
+				&:last-of-type {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+}

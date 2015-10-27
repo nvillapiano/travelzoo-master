@@ -1,0 +1,348 @@
+// _results.scss
+
+.results-page {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+	background: #fff;
+
+	.main-content {
+	    padding: 0 2rem;
+	    max-width: 107rem;
+	}
+
+    .filter-bar {
+    	float: left;
+    	clear: both;
+    	width: 100%;
+    	padding: 3rem 0 2rem;
+
+	    span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: middle;
+		}	
+
+    	.deals-dates {
+    		float: left;
+
+    		.number-of-deals {
+    			margin: 0 2rem 0 0;
+    			font-size: 1.8rem;
+
+    			aside {
+    				display: none;
+
+    				em {
+    					font-style: normal;
+    					color: $blue;
+    				}
+    			}
+    		}
+
+    		.date-picker {
+    			color: $blue;
+    			text-transform: uppercase;
+
+    			img {
+    				margin: 0 0.5rem 0 0;
+    			}
+    		}
+    	}
+
+    	.map-list {
+    		float: right;
+
+    		a {
+    			text-transform: uppercase;
+    			color: $blue;
+    		}
+
+    		span {
+    			margin: -0.5rem 0.5rem 0;
+    		}
+
+    		span + a {
+    			color: #000;
+    		}
+    	}
+
+    	.hr {
+    		float: left;
+    		clear: both;
+    		height: 0.1rem;
+    		width: 100%;
+    		margin: 1rem 0;
+    		background: $super-light-grey;
+    	}
+
+    	.sort-bar {
+    		float: left;
+    		clear: both;
+    		text-transform: uppercase;;
+    		color: $blue;
+
+    		img {
+    			margin: 0 0.5rem 0 0;
+    		}
+
+    		.date-picker {
+    			display: none;
+    		}
+
+    		.sort-by {
+    			display: inline-block;
+    			margin: 0 4rem 0 0;
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+    			span + span {
+    				color: #000;
+    			}
+
+                .dropdown {
+                    position: absolute;
+                    top: -1.1rem;
+                    left: -1.1rem;
+                    background-color: #fff;
+                    width: 19rem;
+                    z-index: 2;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    border: 0.1rem solid #f1f1f1;
+                    box-shadow: 0 0 0.3rem $super-light-grey;
+                    margin: 0 0 0 0;
+                    opacity: 0;
+                    z-index: 2;                    
+                    transition: opacity 0.075s;  
+                    
+                    ul {
+                        margin: 2rem 0 -1rem;
+
+                        li {
+                            margin: 1rem 0;
+
+                            &:hover {
+                                color: #000;
+                                cursor: pointer;
+                            }
+
+                            &.active {
+                                color: #000
+                            }
+                        }
+                    }
+
+                    &.show-dropdown {
+                        opacity: 1;
+                    }                  
+                }
+    		}
+
+    		.filter {
+    			display: inline-block;
+    		}
+
+    		.mobile-icons {
+    			display: none;
+    		}
+    	}
+    }
+
+    .more-vacations {
+    	float: left;
+    	margin: 1rem 0 0 0;
+
+    	.vacations-wrapper {
+
+    		.vacation {
+    			position: relative;
+    			width: 100%;
+                border: 0.1rem solid $super-light-grey;
+                margin: 0 0 2rem;
+
+                .image {
+                    margin: 0 0 -0.5rem;
+                    float: right;
+                }
+
+    			.copy {
+
+                    .number {
+                        background: $red;
+                        display: inline-block;
+                        float: left;
+                        height: 9rem;
+                        width: 9rem;
+                        border-radius: 50%;
+                        position: relative;
+                        text-align: center;
+                        margin: 0 2rem 0 0;
+                        display: none;
+
+                        span {
+                            font-size: 4.8rem;
+                            font-weight: bold;
+                            color: #fff;
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            line-height: 0;
+                        }
+                    }
+
+    				.source {
+    					position: absolute;
+    					bottom: 1rem;
+
+    					span {
+    						display: block;
+    					}
+
+    					img {
+    						margin: 0 0.2rem 0 0;
+    					}
+
+    					em {
+    						font-style: normal;
+    						color: $blue;
+    						margin: 0 0.3rem;
+    					}
+    				}
+
+                    .description-wrapper {
+                        padding: 0 2rem 0 0;
+                        // display: block;
+                        // clear: left;
+                        // margin: 4rem 0 0;
+                    }
+    			}
+    		}
+    	}
+    }
+
+    .deals-list {
+    	float: left;
+    	width: 100%;
+    	margin: 2rem 0;
+    	padding: 3rem 0;
+    	border-top: 0.1rem solid $super-light-grey;
+
+    	.quick-deal {
+    		display: block;
+    		margin: 0 0 3rem;
+    		float: left;
+    		width: 100%;
+
+    		.price {
+    			color: $blue;
+    			font-size: 2.1rem;
+	    		font-weight: 400;
+	    		width: 20rem;
+	    		float: left;
+    		}
+
+    		.details {
+    			width: calc(100% - 20rem);
+    			float: left;
+    			margin: -0.5rem 0 0 0;
+
+	    		.title {
+	    			font-size: 1.8rem;
+	    			font-weight: 400;
+				    color: #000;
+				    line-height: 1.1;
+				    margin: 0.5rem 0 1rem;
+	    		}
+
+	    		.location {
+				    font-size: 1.2rem;
+				    font-weight: 400;
+				    text-transform: uppercase;
+				    line-height: 1;
+				    float: left;
+				    margin: 0 3rem 0 0;
+	    		}
+
+	    		.dates {
+				    font-size: 1.2rem;
+				    font-weight: 400;
+				    text-transform: uppercase;
+				    line-height: 1;
+				    float: left;
+	    		}
+    		}
+
+    		.details + .details {
+    			margin: 2.5rem 0 0 20rem;
+    		}
+    	}
+    }
+
+    .expert-tip {
+    	float: left;
+    	width: 100%;
+    	font-size: 1.8rem;
+    	text-align: center;
+    	margin: -2rem 0 0 0;
+
+    	.tip {
+    		margin: 0 3rem 0 0;
+    	}
+
+    	.expert {
+    		display: inline-block;
+    		vertical-align: middle;
+    		margin: 0 0 0 3rem;
+    		font-size: 1.4rem;
+
+    		img {
+    			vertical-align: middle;
+    		}
+
+    		span {
+    			display: inline-block;
+    			vertical-align: middle;
+    			margin: 0 0 0 1rem;
+    			text-align: left;
+    		}
+    	}
+
+    	.check-them-out {
+    		color: $blue;
+		    font-weight: 300;
+		    text-transform: uppercase;
+		    border: 0.1rem solid;
+		    border-radius: 5rem;
+		    width: 20rem;
+		    margin: 2rem auto 3rem;
+		    padding: 0.7rem 0;
+    	}
+    }
+
+	h6 {
+		font-weight: 600;
+		font-size: 1.3rem;
+		line-height: 1;
+		margin: 0 0 2rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul, li {
+		list-style: none;
+	}
+
+	.footer {
+		clear: both;
+	}
+}

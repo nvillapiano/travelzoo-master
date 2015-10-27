@@ -1,0 +1,487 @@
+// _home.scss
+
+.prototype {
+	background: url('../images/header-bg2.jpg') left top no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 32rem;
+	float: left;
+}
+
+.input {
+	color: #0078ef;
+    background: #fff;
+    padding: 2.3rem 1.5rem;
+    border-radius: 4rem;
+    text-align: center;
+    position: relative;
+    top: 2.3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+
+    &:hover {
+    	cursor: pointer;
+    }    	
+
+    span, .arrow {
+    	display: inline-block;
+    	vertical-align: middle;
+    }
+
+    .arrow {
+    	margin: 0 0 0 1rem;
+    }
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	background: #fff;
+	font-size: 2.1rem;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+    transform: translateY(100%);
+    transition: all .3s;
+
+    &.no-overflow {
+    	overflow-y: scroll; 
+    }
+}
+
+.show-menu {
+	z-index: 10;
+	transform: translateY(0);
+}
+
+.menu-header {
+	height: 5.1rem;
+	background: $blue;
+	padding: 1.2rem 1rem;
+
+	span {
+		position: relative;
+		top: 0.5rem;
+	}
+}
+
+.x {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    z-index: 999;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url('../images/x.png') no-repeat center center;	
+}
+
+.search-arrow {
+	position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+.search-wrapper {
+	background: $blue;
+	padding: 1.2rem 1rem 0.2rem;
+	position: relative;
+	top: -0.1rem;
+}
+
+.deals, .destinations {
+	background: #fff;
+	color:$blue;
+	text-align: left;
+	text-transform: none;
+	font-weight: 500; 
+	padding: 1rem 1.5rem 1rem 3rem;
+	border-radius: 0.5rem;
+	margin: 0 0 1rem 0;
+	width: 100%;
+}
+
+.carrot {
+	float: right;
+	margin: 0.75rem 0 0 0;
+}
+
+.compass {
+	float: right;
+	margin: 0.3rem 0 0 0;
+}
+
+.menu-footer {
+	color: $blue;
+	text-align: left;
+	padding: 2.5rem 1.5rem;
+
+	ul, li {
+		list-style: none;
+		color: #000;
+		text-transform: none;
+		font-weight: 400;
+		margin: 0 0 2.5rem 0;
+
+		span, img {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0.5rem 0 0;
+		}
+	}
+
+	li:hover {
+		cursor: pointer;
+	}
+}
+
+.find-deals, .find-deals2, .find-deals3, .find-deals4, .find-deals5, .find-deals6, .find-deals7, .dates-screen, .dates-screen2 {
+	transition: transform .3s;
+}
+
+.find-deals2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(100%);
+
+	.menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}
+}
+
+.find-deals3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);	
+
+    .menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}	
+
+	.menu-footer {
+		position: relative;
+	}
+}
+
+.find-deals4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(-100%);
+}
+
+.find-deals5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(-100%);
+}
+
+.find-deals6 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(100%);
+
+	.menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}
+
+	.flights-interior {
+		background: $blue;
+		padding: 1rem;
+		position: relative;
+		top: -0.1rem;
+
+		div {
+			background: #fff;
+			color: #000;
+		    text-align: left;
+		    font-weight: 400;
+		    font-size: 1.9rem;
+		    padding: 1.2rem 2rem;
+			text-transform: none;
+			border-radius: 0.4rem;
+			margin: 0 0 1rem 0;		
+		}
+
+		.trip-slider {
+			background: $blue;
+			color: #fff;
+			border-radius: 3rem;
+			border: 0.2rem solid #fff;
+			padding: 0.3rem;
+
+			span {
+				border-radius: 3rem;
+				width: 49%;
+				background: #fff;
+				color: $blue;
+				display: inline-block;
+				padding: 0.9rem;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 1.5rem;
+			}
+
+			span + span {
+				background: $blue;
+				color: #fff;
+			}
+		}
+
+		.from-to {
+			background: $blue;
+			padding: 0;
+
+			div {
+			    display: inline-block;
+			    width: 49.3%;
+			    color: #a3c2f7;
+			    margin: 0;
+			    border-radius: 0.4rem;
+			}
+		}
+
+		.dates {
+			text-align: center;
+			color: $blue;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 1.8rem;
+		}
+
+		.button-yellow {
+			@extend .dates;
+			background: $yellow;
+			border-radius: 3rem;
+			margin: 2rem 0 1rem;
+		}		
+	}
+}
+
+.find-hotels {
+	background: $blue;
+	padding: 1rem;
+	position: relative;
+	top: -0.1rem;
+
+	div {
+		background: #fff;
+		color: #000;
+	    text-align: left;
+	    font-weight: 400;
+	    font-size: 1.9rem;
+	    padding: 1.2rem 2rem;
+		text-transform: none;
+		border-radius: 0.4rem;
+		margin: 0 0 1rem 0;
+	}
+
+	.value-anywhere {
+		
+		span {
+			color: $blue;
+			opacity: 0.35;
+		}
+	}
+}
+
+div.dates {
+	text-align: center;
+	color: $blue;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
+div.button-yellow {
+	@extend .dates;
+	background: $yellow;
+	border-radius: 3rem;
+	margin: 2rem 0 1rem;
+}
+
+.find-deals7 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(100%);
+
+	.menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}
+}
+
+.dates-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: $blue;
+	transform: translateX(100%);
+
+	.menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}
+
+	.dates-interior {
+
+		div {
+			text-transform: none;
+			margin: 2rem 0 4rem;
+		}
+
+		.hr {
+			display: block;
+			clear: both;
+			width: calc(100% - 2rem);
+			margin: -1rem auto 3rem;
+			height: 0.1rem;
+			background: #328fef;
+		}
+
+		.hr + div, .hr + div + div {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.dates-screen2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: $blue;
+	transform: translateX(100%);
+
+	.menu-header {
+		padding-bottom: 5rem;
+	}
+
+	.x {
+		background-position: -1.1rem center;
+	}
+
+	.dates-interior {
+
+		div {
+			text-transform: none;
+			margin: 2rem 0 4rem;
+		}
+
+		.hr {
+			display: block;
+			clear: both;
+			width: calc(100% - 2rem);
+			margin: -1rem auto 3rem;
+			height: 0.1rem;
+			background: #328fef;
+		}
+
+		.hr + div, .hr + div + div {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.slide-off {
+	transform: translateX(-100%);
+}
+
+.opacity-zero {
+	opacity: 0;
+}
+
+.slide-on {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.search-field {
+	width: 100%;
+    border: 0.1rem solid $blue;
+    border-radius: 0.5rem;
+    background: transparent;
+    font-size: 2.1rem;
+    padding: 1.5rem;
+    font-weight: 300;
+}
+
+.inline-search {
+	position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    z-index: -1;
+    transition: .15s;
+}
+
+.label {
+    text-transform: none;
+    color: #999;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 1rem 0 0 1rem;
+}
+
+.autocomplete-suggestions {
+	left: 1.5rem !important;
+}
+
+.autocomplete-suggestion {
+	font-size: 2.1rem;
+	margin: 1rem 0;
+
+	b {
+		font-weight: 300;
+	}
+
+	&.selected {
+		background: transparent;
+		color: $blue;
+	}
+}

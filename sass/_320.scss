@@ -1,0 +1,108 @@
+// _320.scss
+
+
+@media only screen and (max-width: 321px) {
+
+.header {
+
+	.account-icon {
+		left: calc(100% - 3rem);
+	}
+}
+
+.hero {
+	
+	.travel-bar-mobile {
+		width: 30rem;
+		font-size: 1.7rem;
+
+		img {
+		    right: 1.5rem;
+    		width: 2.5rem;
+		}
+	}
+}
+
+.main-content {
+
+	.big-deal {
+
+		.secondary-content {
+
+			.internal-ad {
+
+				.circle {
+					left: 1.1rem;
+				}
+			}
+		}
+	}
+
+	.row {
+
+		&.deals-with-circles {
+
+			.circle {
+				left: 1.1rem;
+			}
+
+			.blog + .promo {
+
+				.circle {
+					left: 1.1rem;
+				}
+			}
+		}
+
+		footer {
+
+			.footer-headline {
+				width: 23rem;
+			}
+		}
+	}
+}
+
+.mobile-footer {
+
+	.footer-wrapper {
+		width: 100%;
+
+		.newsletter {
+			position: relative;
+
+			input {
+				width: 28rem;
+			}
+
+			.arrow {
+				position: absolute;
+				top: 2.6rem;
+				left: initial;
+				right: 0;
+				margin: 0;
+			}
+		}
+
+		.app-links {
+
+			 a {
+			 	display: inline-block;
+
+			 	img {
+			 		height: 4.2rem;
+			 	}
+			 }
+		}
+	}
+
+	.edition {
+
+		.edition-wrapper {
+			width: 100%;
+		}
+	}
+}
+	
+}
+

@@ -1,0 +1,820 @@
+// _home.scss
+
+.hero {
+	background: url('../images/hero.gif') center top no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 5rem 0;
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $blue;
+		opacity: 0.6;
+		z-index: 1;
+	}
+
+	.travel-bar {
+		width: 100%;
+		max-width: 114rem;
+		margin: 0 auto;
+		position: relative;
+		z-index: 5;
+		text-align: center;
+		left: 4rem;
+
+		.deals, .destinations {
+			width: 50rem;
+		    padding: 1rem 2rem 1.2rem;
+		    font-size: 3rem;
+		    color: $blue;
+		    font-family: $open-sans;
+		    font-weight: 300;
+		}
+
+		.chosen-container-single {
+			width: 50rem !important;
+		}
+
+		.destinations {
+			margin: 0 0 0 2rem;
+			border: none;
+			border-radius: 0.5rem;
+			box-shadow: 0px 0.1rem 1rem rgba(0,0,0,.35);
+			// color: #333;
+		}
+
+		.destinations:focus {
+			outline: none;
+		}
+
+		.arrow {
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin: 0 0 0 2rem;
+		    width: 6rem;
+		    height: 6rem;
+		    border-radius: 50%;
+		    position: relative;
+		    border: 0.2rem solid transparent;
+		    background: transparent;
+		    opacity: 0.5;
+		    transition: all .2s;
+
+		    svg {
+				width: 70%;
+			    margin: 0 auto;
+			    display: block;
+			    position: relative;
+			    top: 50%;
+			    transform: translateY(-50%);
+		    }
+		}
+
+		.arrow:hover {
+			cursor: not-allowed;
+		}
+
+		.arrow-focus {
+			border: 0.2rem solid $yellow;
+			opacity: 1;
+		}
+
+		.arrow-focus:hover {
+			cursor: pointer;
+			border: 0.2rem solid $yellow;
+			background: $yellow;
+
+			.arrow-fill {
+				fill: $blue;
+			}
+		}
+
+		// Chosen Styling
+
+		.chosen-container {
+			text-align: left;
+			font-size: 3rem;
+		}
+
+		.input-arrow {
+		    width: 1rem;
+		    position: absolute;
+		    top: 2.1rem;
+		    right: 12rem;
+		    transform: rotate(90deg);
+
+		    &:hover {
+		    	cursor: pointer;
+		    }
+
+		    &.flip {
+		    	transform: rotate(270deg);
+		    }
+		}
+	}
+
+	.travel-bar-mobile {
+		display: none;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.icon-bar {
+	    width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	    margin: 3rem 0 4rem 0;
+	    position: relative;
+	    z-index: 2;
+
+		a, a:hover, a:visited, a:active, a:focus a:link {
+		    display: inline-block;
+		    vertical-align: middle;
+		    width: 10rem;
+		    height: 10rem;
+		    margin: 0 0 0 2.2rem;
+		    background: $navy;
+		    transition: background .3s;
+		    color: #fff;
+		    text-decoration: none;
+		    width: 15rem;
+		    height: 4.6rem;
+		    border-radius: 5rem;
+		    border-radius: 0.5rem;
+		    text-align: left;
+		    position: relative;	
+
+			svg {
+			    margin: 0.8rem 0 1rem 1rem;
+			    fill: #fff;
+			    width: 3rem;
+			    float: left;			
+			}
+		}
+
+		a:first-of-type {
+			margin: 0;
+		}
+
+		a:last-of-type svg {
+    		margin: 1.3rem 0 1rem 1rem;
+		}
+
+		a:hover {
+			background: $yellow;
+			color: $navy;
+
+			svg {
+				fill: $navy;
+			}
+		}
+
+		p {
+			font-size: 1.2rem;
+			line-height: 1.2;
+		    margin: 0 0 0 1rem;
+    		float: left;
+    		position: relative;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+	}
+
+	footer {
+	    height: 1rem;
+	    width: 100%;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    background: url("../images/hero-footer.png");
+	    background-size: 2.7rem;
+	    background-repeat: repeat-x;
+	    z-index: 1;
+	}
+
+}
+
+.arrow-fill {
+	fill: #fff;
+}
+
+.arrow.arrow-focus .arrow-fill {
+	fill: $yellow;
+}	
+
+::-webkit-input-placeholder {
+   color: $placeholder-grey;
+}
+
+::-moz-placeholder { 
+   color: $placeholder-grey;
+}
+
+:-ms-input-placeholder {  
+   color: $placeholder-grey;
+}
+
+// More Chosen Styling 
+
+.chosen-container-single .chosen-default, .chosen-container-single .chosen-single {
+    color: $blue;
+	padding: 1rem 2rem 0.9rem;
+    background: #fff;
+    height: auto;
+    box-shadow: 0px 0.1rem 1rem #666;
+    border: none;
+    line-height: 1.5;
+
+    img {
+    	display: none;
+    }
+}
+
+.chosen-container .chosen-results {
+	max-height: 30rem;
+	margin: 0;
+	padding: 0;
+
+	li {
+	    font-size: 2.1rem;
+	    margin: 0.5rem 0 1rem 0;
+	    padding: 0.5rem 2rem;		
+	}
+
+	li.highlighted {
+		background-image: none;
+		background: transparent;
+		color: $blue;
+	}
+}
+
+.chosen-container .chosen-drop {
+	border: none;
+	box-shadow: 0 .1rem 0.7rem rgba(0,0,0,.35);
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+	top: 0;
+	border-radius: 0.5rem;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+	border: none;
+	background: #fff;
+	box-shadow: none;
+}
+
+.chosen-search {
+	color: $blue;
+	font-weight: normal;
+}
+
+.chosen-container-single .chosen-search {
+	padding: 0;
+}
+
+.chosen-container-single .chosen-search input[type='text'] {
+	border: 0.1rem transparent;
+}
+
+.chosen-container-single .chosen-single div {
+	right: 2rem;
+	width: 1rem;
+
+	b {
+		background-position: center;
+    	transform: rotate(90deg);
+    	background-size: contain !important;
+	}
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+	background: none;
+	box-shadow: 0 0.1rem 0.7rem rgba(0,0,0,.35);
+	font-family: $open-sans;
+	font-size: 3rem;
+	padding: 1rem 2rem 1.2rem;
+	color: $blue;
+	border-radius: 0.5rem;
+}
+
+.search-arrow {
+    width: 1rem;
+    float: right;
+    transform: rotate(-90deg);
+    margin: -5rem 0 0 0;
+    position: relative;
+    left: -2rem;
+    z-index: 999;
+}
+
+// Autocomplete
+
+.autocomplete-suggestions {
+	border: none;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	font-size: 2.1rem;
+	padding: 1.5rem 0 1rem;
+	box-shadow: 0 0.1rem 0.7rem rgba(0,0,0,.35);
+	z-index: 3;
+	margin-top: -1rem;
+}
+
+.autocomplete-suggestion {
+	padding: .5rem 2rem;
+
+	b {
+		color: $blue;
+	}
+}
+
+.autocomplete-suggestion:nth-of-type(1) {
+	padding: .5rem 2rem 1rem;
+}
+
+.autocomplete-suggestion[data-val="Near Me"]::before {
+	content: "";
+	display: inline-block;
+	background: url('../images/compass.svg') no-repeat center;
+	background-size: cover;
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: 0 1rem 0 0;
+}
+
+.auto-complete-suggestions, .autocomplete-suggestion:hover, .autocomplete-suggestion.selected:hover {
+	cursor: pointer;
+}
+
+.autocomplete-suggestion.selected {
+	background: #fff;
+	color: $blue;
+}
+
+.autocomplete-suggestion.selected b {
+	color: $blue;
+}
+
+// Main Content
+
+.main-content {
+	width: 100%;
+	max-width: 128rem;
+	margin: 0 auto;
+	padding: 0 2rem;
+
+	header {
+		position: relative;
+		height: 7rem;
+
+		.spacer {
+			width: calc(50% - 11.5rem);
+			height: 0.2rem;
+			background: $super-light-grey;
+			float: left;
+		    position: relative;
+		    top: 50%;
+		    transform: translateY(-50%);			
+		}
+
+		.todays-top-deals {
+			font-size: 2.1rem;
+			text-transform: uppercase;
+			text-align: center;
+			letter-spacing: 0.1rem;
+			width: 23rem;
+			float: left;
+		    position: relative;
+		    top: 50%;
+		    transform: translateY(-50%);			
+		}
+	}
+
+	.row {
+		width: 100%;
+		height: auto;
+		margin: 0 0 2rem 0;
+		float: left;
+
+		.featured-content {
+			width: calc(66.666% - 1rem);
+			width: 82rem;
+			height: 100%;
+			margin: 0 1rem 0 0;
+			float: left;
+
+			.featured-deal {
+				height: 100%;
+				width: 100%;
+				position: relative;
+				
+				.deal-image {
+					height: calc(100% - 8rem);
+					height: 41rem;
+					background: url('../images/ruins.jpg') no-repeat center;
+					background-size: cover;
+				}
+			}
+		}
+
+		footer {
+			width: 100%;
+			padding: 1rem 0 0;
+			height: 6rem;
+
+			.price {
+				color: $blue;
+				display: inline-block;
+			}
+
+			.footer-headline {
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 0 0 2.5rem;
+				font-size: 1.8rem;
+				font-weight: 400;
+				width: 80%;
+
+				h3 {
+					overflow: hidden;
+					height: 3.3rem;
+				}
+
+				.footer-subheadline {
+					margin: 0.2rem 0 0 0.2rem;
+				}
+			}
+
+			p {
+				width: 85%;
+				margin: 1.3rem 0 0 0;
+
+				a, a:hover, a:active, a:visited, a:focus, a:link {
+					text-decoration: none;
+					color: $blue;
+				}
+			}
+		}		
+
+		.secondary-content {
+			width: calc(33.333% - 1rem);
+			width: 40rem;
+			margin: 0 0 0 1rem;
+			height: 100%;
+			float: left;
+
+			.internal-ad {
+				height: calc(45% - 1rem);
+				height: 25rem;
+				margin: 0 0 2rem 0;
+				background: url('../images/glide.jpg') no-repeat center;
+    			background-size: cover;
+    			position: relative;
+
+    			.copy {
+				    text-align: center;
+				    position: relative;
+				    top: 50%;
+				    transform: translateY(-50%);
+
+				    h2 {
+				    	color: $yellow;
+				    }
+				 	h5 {
+				 		color: #fff;
+				 		margin: 0 0 0.5rem 0;
+				 	}
+    			}
+			}
+
+			.secondary-deal {
+
+				.deal-image {
+					height: calc(100% - 8rem);
+					height: 20rem;
+					background: url('../images/jetblue.jpg') no-repeat center;
+					background-size: cover;
+				}
+
+				footer {
+
+					div {
+						margin: 0 0 0.4rem 0;
+					}
+
+					.price {
+						font-size: 1.8rem;
+					}
+
+					.footer-headline {
+						margin: 0 0 0 1.5rem;
+						width: 70%;
+
+						div {
+							overflow: hidden;
+							height: 2.04rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.row-of-deals {
+
+		.secondary-deal {
+			width: 40rem;
+			float: left;
+			margin: 0 2rem 0 0;
+
+			&:first-of-type {
+
+				.deal-image {
+					background: url('../images/italy.jpg') no-repeat center;
+					background-size: cover;
+				}
+			}			
+
+			&:last-of-type {
+				margin: 0;
+
+				.deal-image {
+					background: url('../images/south-africa.jpg') no-repeat center;
+					background-size: cover;
+				}
+			}
+
+			.deal-image {
+				height: 20rem;
+				background: red;
+				background: url('../images/alaska.jpg') no-repeat center;
+				background-size: cover;
+			}
+
+			footer {
+
+				.price {
+					font-size: 1.8rem;
+				}
+
+				.footer-headline {
+				    margin: 0 0 0 1.5rem;
+				    width: 70%;
+
+				    div {
+				        overflow: hidden;
+			    		height: 2.04rem;	
+				    }		
+				}
+			}
+		}
+	}	
+
+	.deals-with-circles {
+		height: 26rem;
+		margin: 0 0 2rem 0;
+
+		.promo, .blog {
+			width: 40rem;
+			background: black;
+			height: 100%;
+			float: left;
+			padding: 1rem;
+		}
+
+		.promo {
+			background: url('../images/beach.jpg') no-repeat center;			
+			background-size: cover;
+		}
+
+		.promo:nth-of-type(1) {
+			background: url('../images/chicken-fight.jpg') no-repeat center;
+			background-size: cover;
+
+			.circle-headline {
+				position: relative;
+				top: -1rem;
+			}
+		}
+
+		.blog {
+			margin: 0 2rem;
+			background: url('../images/water-slide.jpg') no-repeat center;
+			background-size: cover;
+
+			.circle {
+				background-color: #fff;
+				
+				.copy {
+					color: #000;
+
+					.circle-footer div {
+						color: $blue;
+					}
+				}			
+			}
+		}
+
+		.circle {
+			border-radius: 50%;
+			background: rgba(0, 120, 239, .8);
+			height: 24rem;
+			width: 24rem;
+			position: relative;
+
+			.copy {
+				text-align: center;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #fff;
+
+				.circle-headline {
+					width: 50%;
+					margin: 0 auto;
+					border-bottom: 0.1rem solid $yellow;
+					padding: 0 0 0.5rem 0;
+				}
+
+				.circle-main {
+					height: 11rem;
+					position: relative;
+
+					> * {
+						position: relative;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	.big-deal {
+
+		.featured-content {
+		    width: calc(66.666% - 1rem);
+		    width: 82rem;
+		    height: 100%;
+		    margin: 0 1rem 0 0;
+		    float: left;			
+
+			.featured-deal {
+
+				.deal-image {
+					background: url('../images/dolphins.jpg') no-repeat center;
+					background-size: cover;
+				}
+
+				footer {
+					height: 11.7rem;
+					overflow: hidden;
+
+					p {
+						width: 85%;
+						margin: 1.3rem 0 0 0;
+
+						a, a:hover, a:active, a:visited, a:focus, a:link {
+							text-decoration: none;
+							color: $blue;
+						}
+					}
+
+					.price h6 {
+						margin: 0.2rem 0 0 0.2rem;
+						float: right;
+					}
+				}
+			}
+		}
+
+		.secondary-content {
+		    
+			.secondary-deal {
+				margin: 0 0 1.6rem 0;
+
+				.deal-image {
+					background: url('../images/sofitel.jpg') no-repeat center;
+					background-size: cover;
+				}
+			}
+
+			.internal-ad {
+				background: url('../images/virgin-islands.jpg') no-repeat center;
+				background-size: cover;
+				position: relative;
+				height: calc( 50% - 1rem );
+				padding: 1rem;
+				margin: 0;
+				float: left;
+				width: 40rem;
+
+				.circle {
+					border-radius: 50%;
+					background: rgba(0, 120, 239, .8);
+					height: 24rem;
+					width: 24rem;
+					position: relative;
+
+					.copy {
+						text-align: center;
+						position: relative;
+						top: 50%;
+						transform: translateY(-50%);
+						color: #fff;
+
+						.circle-headline {
+							width: 50%;
+							margin: 0 auto;
+							border-bottom: 0.1rem solid $yellow;
+							padding: 0 0 0.5rem 0;
+							position: relative;
+							top: -1rem;
+						}
+
+						.circle-main {
+							height: 11rem;
+							position: relative;
+
+							> * {
+								position: relative;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+.secondary-deal {
+	width: 40rem;
+	float: left;
+
+	.deal-image {
+		height: 20rem;
+		background: red;
+	}
+
+	.price {
+
+		h3 {
+			font-size: 1.8rem;
+		}
+
+		h6 {
+			margin: 0.2rem 0 0 0.2rem;
+			text-align: right;
+		}
+	}
+
+	.footer-headline {
+	    margin: 0.2rem 0 0 1.5rem;
+	    width: 70%;
+
+	    div {
+	        overflow: hidden;
+    		height: 2.04rem;	
+	    }		
+	}
+}
+
+.more-deals {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10rem 0;
+	clear: both;
+	position: relative;
+	top: 2rem;
+
+	.button {
+		color: $blue;
+		font-size: 1.8rem;		
+		border: 0.1rem solid;
+		border-radius: 2.5rem;
+		max-width: 30rem;
+		padding: 0.5rem 0;
+		margin: 0 auto;
+
+		img {
+			width: 2.7rem;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			left: -2rem;
+		}
+
+		span {
+			position: relative;
+    		top: 0.2rem;
+		}
+	}
+}

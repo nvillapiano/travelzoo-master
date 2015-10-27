@@ -1,0 +1,707 @@
+// _deals-breaks.scss
+
+@media only screen and (max-width: 1060px) {
+
+	.deals-page {
+		font-size: 1.3rem;
+	}
+
+	.deal-wrapper {
+
+		.copy {
+
+			.action-bar {
+
+				.book-now {
+				    margin: 0 1rem 0 0;	
+				}
+
+				img {
+				    margin: 0 0 0 1rem;	
+				}
+			}
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	.lockbar {
+
+		.deal {
+			margin: 0;
+		}
+	}
+	
+	.deal-wrapper {
+		margin: 0 0 4rem 0;
+
+		.images {
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			.caption {
+
+				img {
+					width: initial;
+				}
+			}
+		}
+
+		.copy {
+			width: 100%;
+			margin: 2rem 0 0;
+			position: relative;
+
+			img {
+				width: initial;
+			}
+
+			.description {
+				position: absolute;
+				left: 50%;
+				top: 0;
+			}
+
+			.source {
+				position: absolute;
+				left: 50%;
+				bottom: -1rem;
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.reviews {
+
+			.row {
+
+				&.review {
+
+					.posted-by {
+						width: 18%;
+					}
+				}
+			}
+		}
+	}
+
+	.more-vacations {
+
+		.vacations-wrapper {
+
+			.vacation {
+
+				.copy {
+					margin: 0 0 0 2rem;
+				}
+			}
+		}
+	}
+
+	.great-deals {
+		width: 100%;
+
+		.grid {
+
+			ul {
+
+				li {
+					width: calc(25% - 1.6rem);
+
+					&:nth-of-type(9), &:nth-of-type(10) {
+						display: none;
+					}
+
+					&:nth-of-type(5) {
+						margin: 0 2rem 0 0;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+	.deal-wrapper {
+
+		.copy {
+
+			.title {
+				max-width: 35rem;
+			}
+		}
+	}
+
+	.lockbar {
+
+		.deal {
+			margin: 0;
+
+			.price, .headline {
+				display: none;
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.reviews {
+
+			.review-intro {
+
+				.copy {
+
+					.headline {
+						font-size: 2rem;
+					}
+				}
+			}
+
+			.row {
+
+				.posted-by {
+					width: 18%;
+				}
+			}
+		}
+	}
+
+	.more-vacations {
+
+		.vacations-wrapper {
+
+			.vacation {
+
+				.image {
+					width: 100%;
+
+					img {
+						width: 100%;
+					}
+				}
+
+				.copy {
+					width: 100%;
+					position: relative;
+					top: 1rem;
+					margin: 0 0 2rem 0;
+
+					.title {
+						max-width: 35rem;
+					}
+
+					.description {
+						position: absolute;
+						right: 0;
+						top: -2rem;
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.deal-wrapper {
+		margin: 0 0 6rem 0;
+
+		.images {
+			width: 100%;
+
+			.pagination {
+				display: none;
+			}
+		}
+
+		.copy {
+			width: 100%;
+		    margin: -1.5rem 0 0;
+
+			.location {
+				margin: 0 0 2rem;
+			}
+
+			.action-bar {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			.description {
+				position: relative;
+				left: 0;
+			}
+
+			.source {
+				left: 0;
+				bottom: initial;
+			}
+		}
+	}
+
+	.deals-hero {
+	    width: calc(100% - 4rem);
+    	left: 0;	
+
+		.input1, .input2, .deals-arrow {
+			display: none;
+		}
+
+		.input-mobile {
+			display: block;
+			color: $blue;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+			width: 100%;
+			max-width: 36rem;
+			margin: 0 auto;
+			border-radius: 3rem;
+			border: 0.1rem solid;
+			padding: 1rem 2.2rem;
+
+			img {
+				width: 2rem;
+				float: right;
+				margin: 0.35rem 0 0 0;
+			}
+		}
+	}
+
+	.tabs {
+
+		ul {
+			width: 100%;
+
+			li {
+
+				width: 33.3%;
+
+				a {
+
+					span {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.the-deal {
+
+			.col1 {
+				width: 100%;
+			}
+
+			.col2 {
+				width: 100%;
+				margin: 0;
+
+				blockquote {
+					width: 90%;
+					margin: 4rem 0 0 2rem;
+				}
+			}
+		}
+
+		.reviews {
+
+			.review-intro {
+				margin: 0 0 2rem 0;
+
+				.up-or-down {
+					width: 3.4rem;
+				}
+
+				.copy {
+					width: 85%;
+					margin: 0;
+
+					.disclaimer {
+						margin: 1rem 0 0;
+					}
+				}
+
+				.ratings {
+					margin: 1rem 0 0 5rem;
+					width: calc(100% - 5rem);
+
+					ul {
+
+						li {
+							display: block;
+							margin: 0;
+							clear: left;
+							width: 100%;
+							text-align: left;
+
+							img {
+								display: inline-block;
+								vertical-align: middle;
+							}
+
+							div {
+								display: inline-block;
+								margin: 0rem 0 1rem;
+
+								strong {
+									float: left;
+									margin: 0 1rem;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.row {
+
+				.posted-by {
+					width: 17%;
+				}
+
+				&.review {
+
+					.posted-by {
+						width: 17%;
+					}
+
+					p {
+
+						span {
+						    display: inline-block;
+						    margin: 0 1rem 0 0;
+						    font-weight: 600;
+						}
+					}
+				}
+
+				&.headings {
+					display: none;
+				}
+
+				&:nth-of-type(3) {
+					border-top: 0.1rem solid $super-light-grey;
+					padding: 2rem 0;
+				}
+
+				&.review {
+
+					.overall {
+						width: 2rem;
+						margin: 0 2rem 0 0;
+					}
+
+					.enjoyed-most {
+						width: calc(100% - 4rem);
+						display: block;
+						margin: 0;
+					}
+
+					.other-comments {
+						width: 100%;
+						margin: 1rem 0 0 4rem;
+					}
+
+					.posted-by {
+						width: calc(100% - 4rem);
+						margin: 1rem 0 0 4rem;
+
+						.date {
+							float: right;
+						}
+
+						.address {
+							float: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.need-help {
+	    margin: 3rem 0 4rem;
+	    float: left;
+	}
+
+	.more-vacations {
+
+		.vacations-wrapper {
+
+			.vacation {
+
+				.copy {
+
+					.description {
+					    position: relative;
+					    width: 100%;
+					    top: initial;						
+					}
+				}
+			}
+		}
+	}
+
+	.great-deals {
+		margin: 0;
+
+		.grid {
+
+			ul {
+
+				li {
+					width: calc(50% - 1rem);
+					margin: 0 2rem 0 0;
+
+					&:nth-of-type(even) {
+						margin: 0 0 0 0;
+					}
+
+					&:first-of-type {
+						margin: 0 2rem 0 0;
+					}
+				}
+			}
+		}
+	}
+
+	.deals-page {
+
+		.mobile-footer {
+		    float: left;
+	    	width: 100%;
+	    	margin: 2rem 0 0 0;	
+		}
+	}
+}
+
+@media only screen and (max-width: 660px) {
+
+	.lockbar {
+		top: initial;
+		bottom: 0;
+		transform: translateY(100%);
+
+		.logo, .title {
+
+			display: none;
+		}
+
+		.deal {
+			float: left;
+
+			.price, .headline {
+				display: none;
+			}
+
+			.book-now {
+				font-size: 1.5rem;
+			    width: 22.5rem;
+			    text-align: center;
+			    padding: 0.95rem 2.25rem;				
+			}
+
+			.fav {
+				width: 4.5rem;
+				height: 4.5rem;
+			}
+		}
+	}
+
+	.deal-wrapper {
+
+		.copy {
+
+			.action-bar {
+				position: relative;
+			    margin: 0 0 2rem;
+
+				.book-now {
+				    font-size: 1.5rem;
+				    width: 22.5rem;
+				    text-align: center;
+				    padding: 0.95rem 2.25rem;					
+				}
+
+				img {
+					display: none;
+
+					&:nth-of-type(1), &:nth-of-type(5) {
+						display: inline-block;
+						width: 4.5rem;
+						height: 4.5rem;
+					}
+				}		    			
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.the-deal {
+
+			.col2 {
+
+				blockquote {
+					margin: 0 0 0 2rem;
+				}
+
+				.deal-expert {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.need-help {
+		ul {
+
+			li {
+
+				&:nth-of-type(2) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.more-vacations {
+
+		.vacations-intro {
+
+			div {
+				font-size: 1.8rem;
+				width: 29rem;
+			}
+		}
+	}
+
+	.great-deals {
+
+		.great-deals-intro {
+
+			div {
+				font-size: 1.8rem;
+				width: 20rem;
+			}
+		}
+
+		// .grid {
+
+		// 	ul {
+
+		// 		li {
+
+		// 			width: 100%;
+		// 			margin: 0;
+		// 		}
+		// 	}
+		// }
+	}
+
+}
+
+@media only screen and (max-width: 398px) {
+
+	.deals-hero {
+
+		.input-mobile {
+			font-size: 1.5rem;
+		}
+	}
+
+	.deal-wrapper {
+
+		.copy {
+
+			.action-bar {
+
+				.book-now {
+					width: 15rem;
+				}
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.reviews {
+
+			.review-intro {
+
+				.copy {
+					width: 80%;
+
+					.headline {
+						margin: 0;
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	.need-help {
+		ul {
+
+			li {
+
+				margin: 0 1.3rem 0 0;
+			}
+		}
+	}
+
+	.more-deals {
+
+		div {
+			width: 100%;
+			max-width: 30rem;
+		}
+	}
+
+	.deals-page {
+
+		.mobile-footer {
+
+			.footer-wrapper {
+
+				.app-links {
+
+					a + a {
+						margin: 0 0 0 1.4rem;
+					}
+				}
+			}
+		}
+	}
+
+	.lockbar {
+
+		.deal {
+
+			.book-now {
+				width: 15rem;
+			}
+		}
+	}
+
+}
+
+

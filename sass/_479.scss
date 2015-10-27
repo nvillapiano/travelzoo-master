@@ -1,0 +1,171 @@
+// _479.scss
+
+@media only screen and (max-width: 479px) {
+
+h3 {
+	font-size: 1.8rem;
+	line-height: 1;
+	margin: 0 0 0.5rem 0;
+}
+
+.main-content {
+	max-width: 37.5rem;
+	padding: 0 1rem;
+
+	.row {
+		margin: 0;
+
+		.featured-content {
+			width: 100%;
+
+			.featured-deal {
+				margin: 0 0 2rem 0;
+
+				footer {
+					height: 6.4rem;
+				}
+
+				.deal-image {
+					height: 17.75rem;
+				}
+			}
+		}
+
+		.secondary-content {
+			width: 100%;
+			margin: 0;
+
+			.internal-ad {
+				height: 17.75rem;
+				width: 100%;
+				float: left;
+				margin: 0 0 1rem 0;
+			}
+
+			.secondary-deal {
+				width: 100%;
+				float: left;
+				margin: 0 0 1.4rem 0;
+
+				.deal-image {
+					height: 17.75rem;
+				}
+			}
+		}
+
+		&.deals-with-circles {
+			width: 100%;
+			height: auto;
+			margin: 0;
+
+			.circle {
+				left: 4rem;
+			}
+
+			.promo {
+				margin: 0 0 1rem 0;
+
+				&:nth-of-type(1) {
+					width: 100%;
+				}
+			}
+
+			.blog {
+				width: 100%;
+				float: left;
+				margin: 0 0 1rem 0;
+			}
+
+			.blog + .promo {
+				width: 100%;
+
+				.circle {
+					left: 4rem;
+				}
+			}
+		}
+
+		footer {
+
+			.footer-headline {
+				width: 24.1rem;
+				margin: 0 0 0 1.5rem;
+
+				h3 {
+					height: 3.8rem;
+					overflow: hidden;					
+				}
+			}
+		}		
+	}
+
+	.row-of-deals {
+
+		.secondary-deal {
+
+			.deal-image {
+				height: 17.75rem;
+			}
+		}
+	}	
+
+	.big-deal {
+
+		.featured-content {
+			margin: 0 0 -0.5rem 0;
+
+			.featured-deal {
+
+				footer {
+					height: 6.4rem;
+
+					p {
+						display: none;
+					}
+
+					.price {
+						margin: 0 0 0 0.2rem;
+					}
+				}
+			}
+		}
+
+		.secondary-content {
+
+			.secondary-deal {
+				margin: 0;
+				width: 100%;
+				float: left;
+			}
+
+			.internal-ad {
+				height: 22.95rem;
+
+				.circle {
+					left: 4rem;
+				}
+
+				&.footer-option {
+					height: 18rem;
+
+					.circle {
+						transform: scale(0.65) translateY(-7.6rem);	
+					}
+				}
+			}
+		}
+	}
+}	
+
+.secondary-deal {
+
+	.footer-option {
+		position: relative;
+	    top: -5.8rem;
+	    background-color: rgba(255,255,255,0.75);
+	    padding: 1rem !important;
+	    margin-bottom: -6rem;
+	}
+}
+
+} 

@@ -1,0 +1,42 @@
+// _third-party.scss
+
+.third-party {
+
+	.tabs {
+
+		ul {
+			width: 36rem;
+
+			li {
+
+				&:nth-of-type(2) {
+					border-radius: 0.5rem;
+				    border-top-left-radius: 0;
+				    border-bottom-left-radius: 0;
+				    border-left: 0;
+				}
+			}
+		}
+	}
+
+	.deal-guts {
+
+		.the-deal {
+
+			.col1 {
+				padding: 0 5% 0 0;
+			}
+
+			.col2 {
+
+				h6 {
+					margin: 0 0 1rem 0;
+				}
+			}
+		}
+	}
+
+	.map {
+		margin: 2rem 0 4rem;
+	}
+}

@@ -1,0 +1,40 @@
+/*
+Travel Zoo Hero Prototype
+designed and developed by Hard Candy Shell
+www.hardcandyshell.com
+@hardcandyshell
+*/
+
+// variables
+
+$blue: #0078ef;
+$navy: rgba(1,80,165, .8);
+$yellow: #ffed20;
+$red: #f24636;
+$grey: #a4a4a4;
+$placeholder-grey: #444241;
+$light-grey: #c1c0c0;
+$super-light-grey: #f1f1f1;
+$open-sans: 'Open Sans', sans-serif;
+
+// imports
+
+@import 'base';
+@import 'universal';
+@import 'typography';
+@import 'home';
+@import 'deals';
+@import 'third-party';
+@import 'hotel-deal';
+@import 'voucher';
+@import 'hotel-from-search';
+@import 'deals-breaks';
+@import 'results';
+@import 'results-breaks';
+@import '1279';
+@import '1023';
+@import '900';
+@import '767';
+@import '599';
+@import '479';
+@import '320';

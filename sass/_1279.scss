@@ -1,0 +1,196 @@
+// _1279.scss
+
+@media only screen and (max-width: 1279px) {
+
+.hero {
+	max-width: 100%;
+
+	.travel-bar {
+		left: 4rem;
+
+		.deals, .destinations {
+			width: 38rem;
+		}
+
+		.chosen-container-single {
+			width:38rem !important;
+			margin: 0 -0.2rem 0 0;
+		}
+
+		.input-arrow {
+			right: 24.2rem;
+		}
+	}
+
+	.icon-bar {
+
+		a, a:hover, a:active, a:visited, a:link {
+			width: 11rem;
+			height: 11rem;
+			text-align: center;
+
+			svg {
+				margin: 2rem 1rem 1rem 1rem;
+				width: 34%;
+				float: none;
+			}
+
+			p {
+				float: none;
+				top: 0;
+				transform: translateY(0);
+				clear: both;
+				width: 100%;
+				margin: 0;
+			}
+
+			&:first-of-type, &:last-of-type {
+				
+				p {
+					max-width: 5rem;
+					margin: 0 auto;				
+				}
+			}
+
+			&:last-of-type {
+				 svg {
+				 	margin: 2.35rem 1rem 1.35rem 1rem;
+				 }
+			}
+		}
+	}
+}
+
+.main-content {
+	max-width: 102.4rem;
+	padding: 0 1rem;
+
+	.row {
+
+		.featured-content {
+			width: 65.6rem;
+
+			.featured-deal {
+
+				footer {
+					height: 11.7rem;
+					overflow: hidden;
+				}
+
+				.deal-image {
+					height: 32.8rem;
+				}
+			}
+		}
+
+		.secondary-content {
+			width: 32.8rem;
+
+			.internal-ad {
+				height: 20.9rem;
+				margin: 0 0 2rem 0;
+			}
+
+			.secondary-deal {
+
+				.deal-image {
+					height: 15.9rem;
+				}
+			}
+		}
+	}
+
+	.row-of-deals {
+
+		.secondary-deal {
+		    width: 31.8rem;
+		    float: left;
+		    margin: 0 2rem 0 0;
+
+		    &:last-of-type {
+		    	width: 32.8rem;
+		    }
+
+		    footer {
+
+		    	.footer-headline {
+		    		width: 66%;
+		    	}
+		    }
+
+		    .deal-image {
+		    	height: 15.9rem;
+		    }			
+		}
+	}
+
+	.deals-with-circles {
+		height: 21.9rem;
+		margin: -2rem 0 2rem 0;
+
+		.promo, .blog {
+			width: 31.8rem;
+		}
+
+		.blog + .promo {
+			width: 32.8rem;
+		}
+
+		.circle {
+			transform: scale(0.85) translateY(-2.4rem) translateX(3.5rem);
+		}
+	}
+
+	.big-deal {
+
+		.featured-content {
+
+			.featured-deal {
+
+				footer {
+					height: 11.7rem;
+
+					p {
+						width: 90%;
+					}
+				}
+			}
+		}
+
+		.secondary-content {
+
+			.internal-ad {
+				width: 32.8rem;
+				height: 21.9rem;
+
+				.circle {
+					transform: scale(0.85) translateY(-2.4rem) translateX(3.5rem);
+				}
+			}
+		}
+	}
+}
+
+.secondary-deal {
+	width: 32.8rem;
+}
+
+.footer {
+
+	.sub-footer {
+
+		.newsletter {
+
+			span {
+				display: block;
+				margin: 0 2rem 1rem 0;
+			}
+		}
+	}
+
+	.sub-sub-footer {
+		padding: 1rem 2rem 2rem 2rem;	
+	}
+}
+
+} 

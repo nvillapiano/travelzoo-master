@@ -1,0 +1,673 @@
+/*
+Travel Zoo Moblie Prototype
+designed and developed by Hard Candy Shell
+www.hardcandyshell.com
+@hardcandyshell
+*/
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+/* line 7, ../sass/_base.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 15, ../sass/_base.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 34, ../sass/_base.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../sass/_base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 41, ../sass/_base.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 44, ../sass/_base.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../sass/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 52, ../sass/_base.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 59, ../sass/_base.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 64, ../sass/_base.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 70, ../sass/_base.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 73, ../sass/_base.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 77, ../sass/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 81, ../sass/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 89, ../sass/_base.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 92, ../sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 5, ../sass/_universal.scss */
+html {
+  overflow-x: hidden;
+  width: 400px;
+}
+
+/* line 10, ../sass/_universal.scss */
+body {
+  width: 40rem;
+  background: grey;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* line 20, ../sass/_universal.scss */
+.no-overflow {
+  overflow: hidden;
+}
+
+/* line 26, ../sass/_universal.scss */
+.header img, .footer img {
+  width: 100%;
+  float: left;
+}
+
+/* line 3, ../sass/_home.scss */
+.prototype {
+  background: url("../images/header-bg2.jpg") left top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 32rem;
+  float: left;
+}
+
+/* line 11, ../sass/_home.scss */
+.input {
+  color: #0078ef;
+  background: #fff;
+  padding: 2.3rem 1.5rem;
+  border-radius: 4rem;
+  text-align: center;
+  position: relative;
+  top: 2.3rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 25, ../sass/_home.scss */
+.input:hover {
+  cursor: pointer;
+}
+/* line 29, ../sass/_home.scss */
+.input span, .input .arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 34, ../sass/_home.scss */
+.input .arrow {
+  margin: 0 0 0 1rem;
+}
+
+/* line 39, ../sass/_home.scss */
+.menu {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background: #fff;
+  font-size: 2.1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  transform: translateY(100%);
+  transition: all .3s;
+}
+/* line 56, ../sass/_home.scss */
+.menu.no-overflow {
+  overflow-y: scroll;
+}
+
+/* line 61, ../sass/_home.scss */
+.show-menu {
+  z-index: 10;
+  transform: translateY(0);
+}
+
+/* line 66, ../sass/_home.scss */
+.menu-header {
+  height: 5.1rem;
+  background: #0078ef;
+  padding: 1.2rem 1rem;
+}
+/* line 71, ../sass/_home.scss */
+.menu-header span {
+  position: relative;
+  top: 0.5rem;
+}
+
+/* line 77, ../sass/_home.scss */
+.x {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  z-index: 999;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: url("../images/x.png") no-repeat center center;
+}
+
+/* line 87, ../sass/_home.scss */
+.search-arrow {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+/* line 94, ../sass/_home.scss */
+.search-wrapper {
+  background: #0078ef;
+  padding: 1.2rem 1rem 0.2rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+/* line 101, ../sass/_home.scss */
+.deals, .destinations {
+  background: #fff;
+  color: #0078ef;
+  text-align: left;
+  text-transform: none;
+  font-weight: 500;
+  padding: 1rem 1.5rem 1rem 3rem;
+  border-radius: 0.5rem;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+/* line 113, ../sass/_home.scss */
+.carrot {
+  float: right;
+  margin: 0.75rem 0 0 0;
+}
+
+/* line 118, ../sass/_home.scss */
+.compass {
+  float: right;
+  margin: 0.3rem 0 0 0;
+}
+
+/* line 123, ../sass/_home.scss */
+.menu-footer {
+  color: #0078ef;
+  text-align: left;
+  padding: 2.5rem 1.5rem;
+}
+/* line 128, ../sass/_home.scss */
+.menu-footer ul, .menu-footer li {
+  list-style: none;
+  color: #000;
+  text-transform: none;
+  font-weight: 400;
+  margin: 0 0 2.5rem 0;
+}
+/* line 135, ../sass/_home.scss */
+.menu-footer ul span, .menu-footer ul img, .menu-footer li span, .menu-footer li img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5rem 0 0;
+}
+/* line 142, ../sass/_home.scss */
+.menu-footer li:hover {
+  cursor: pointer;
+}
+
+/* line 147, ../sass/_home.scss */
+.find-deals, .find-deals2, .find-deals3, .find-deals4, .find-deals5, .find-deals6, .find-deals7, .dates-screen, .dates-screen2 {
+  transition: transform .3s;
+}
+
+/* line 151, ../sass/_home.scss */
+.find-deals2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+}
+/* line 158, ../sass/_home.scss */
+.find-deals2 .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 162, ../sass/_home.scss */
+.find-deals2 .x {
+  background-position: -1.1rem center;
+}
+
+/* line 167, ../sass/_home.scss */
+.find-deals3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+}
+/* line 174, ../sass/_home.scss */
+.find-deals3 .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 178, ../sass/_home.scss */
+.find-deals3 .x {
+  background-position: -1.1rem center;
+}
+/* line 182, ../sass/_home.scss */
+.find-deals3 .menu-footer {
+  position: relative;
+}
+
+/* line 187, ../sass/_home.scss */
+.find-deals4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+/* line 195, ../sass/_home.scss */
+.find-deals5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+/* line 203, ../sass/_home.scss */
+.find-deals6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+}
+/* line 210, ../sass/_home.scss */
+.find-deals6 .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 214, ../sass/_home.scss */
+.find-deals6 .x {
+  background-position: -1.1rem center;
+}
+/* line 218, ../sass/_home.scss */
+.find-deals6 .flights-interior {
+  background: #0078ef;
+  padding: 1rem;
+  position: relative;
+  top: -0.1rem;
+}
+/* line 224, ../sass/_home.scss */
+.find-deals6 .flights-interior div {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.9rem;
+  padding: 1.2rem 2rem;
+  text-transform: none;
+  border-radius: 0.4rem;
+  margin: 0 0 1rem 0;
+}
+/* line 236, ../sass/_home.scss */
+.find-deals6 .flights-interior .trip-slider {
+  background: #0078ef;
+  color: #fff;
+  border-radius: 3rem;
+  border: 0.2rem solid #fff;
+  padding: 0.3rem;
+}
+/* line 243, ../sass/_home.scss */
+.find-deals6 .flights-interior .trip-slider span {
+  border-radius: 3rem;
+  width: 49%;
+  background: #fff;
+  color: #0078ef;
+  display: inline-block;
+  padding: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+/* line 256, ../sass/_home.scss */
+.find-deals6 .flights-interior .trip-slider span + span {
+  background: #0078ef;
+  color: #fff;
+}
+/* line 262, ../sass/_home.scss */
+.find-deals6 .flights-interior .from-to {
+  background: #0078ef;
+  padding: 0;
+}
+/* line 266, ../sass/_home.scss */
+.find-deals6 .flights-interior .from-to div {
+  display: inline-block;
+  width: 49.3%;
+  color: #a3c2f7;
+  margin: 0;
+  border-radius: 0.4rem;
+}
+/* line 275, ../sass/_home.scss */
+.find-deals6 .flights-interior .dates, .find-deals6 .flights-interior .button-yellow {
+  text-align: center;
+  color: #0078ef;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+/* line 283, ../sass/_home.scss */
+.find-deals6 .flights-interior .button-yellow {
+  background: #ffed20;
+  border-radius: 3rem;
+  margin: 2rem 0 1rem;
+}
+
+/* line 292, ../sass/_home.scss */
+.find-hotels {
+  background: #0078ef;
+  padding: 1rem;
+  position: relative;
+  top: -0.1rem;
+}
+/* line 298, ../sass/_home.scss */
+.find-hotels div {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.9rem;
+  padding: 1.2rem 2rem;
+  text-transform: none;
+  border-radius: 0.4rem;
+  margin: 0 0 1rem 0;
+}
+/* line 312, ../sass/_home.scss */
+.find-hotels .value-anywhere span {
+  color: #0078ef;
+  opacity: 0.35;
+}
+
+/* line 319, ../sass/_home.scss */
+div.dates, .find-deals6 .flights-interior div.button-yellow, div.button-yellow {
+  text-align: center;
+  color: #0078ef;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+/* line 327, ../sass/_home.scss */
+div.button-yellow {
+  background: #ffed20;
+  border-radius: 3rem;
+  margin: 2rem 0 1rem;
+}
+
+/* line 334, ../sass/_home.scss */
+.find-deals7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(100%);
+}
+/* line 341, ../sass/_home.scss */
+.find-deals7 .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 345, ../sass/_home.scss */
+.find-deals7 .x {
+  background-position: -1.1rem center;
+}
+
+/* line 350, ../sass/_home.scss */
+.dates-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0078ef;
+  transform: translateX(100%);
+}
+/* line 359, ../sass/_home.scss */
+.dates-screen .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 363, ../sass/_home.scss */
+.dates-screen .x {
+  background-position: -1.1rem center;
+}
+/* line 369, ../sass/_home.scss */
+.dates-screen .dates-interior div {
+  text-transform: none;
+  margin: 2rem 0 4rem;
+}
+/* line 374, ../sass/_home.scss */
+.dates-screen .dates-interior .hr {
+  display: block;
+  clear: both;
+  width: calc(100% - 2rem);
+  margin: -1rem auto 3rem;
+  height: 0.1rem;
+  background: #328fef;
+}
+/* line 383, ../sass/_home.scss */
+.dates-screen .dates-interior .hr + div, .dates-screen .dates-interior .hr + div + div {
+  text-transform: uppercase;
+}
+
+/* line 389, ../sass/_home.scss */
+.dates-screen2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0078ef;
+  transform: translateX(100%);
+}
+/* line 398, ../sass/_home.scss */
+.dates-screen2 .menu-header {
+  padding-bottom: 5rem;
+}
+/* line 402, ../sass/_home.scss */
+.dates-screen2 .x {
+  background-position: -1.1rem center;
+}
+/* line 408, ../sass/_home.scss */
+.dates-screen2 .dates-interior div {
+  text-transform: none;
+  margin: 2rem 0 4rem;
+}
+/* line 413, ../sass/_home.scss */
+.dates-screen2 .dates-interior .hr {
+  display: block;
+  clear: both;
+  width: calc(100% - 2rem);
+  margin: -1rem auto 3rem;
+  height: 0.1rem;
+  background: #328fef;
+}
+/* line 422, ../sass/_home.scss */
+.dates-screen2 .dates-interior .hr + div, .dates-screen2 .dates-interior .hr + div + div {
+  text-transform: uppercase;
+}
+
+/* line 428, ../sass/_home.scss */
+.slide-off {
+  transform: translateX(-100%);
+}
+
+/* line 432, ../sass/_home.scss */
+.opacity-zero {
+  opacity: 0;
+}
+
+/* line 436, ../sass/_home.scss */
+.slide-on {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* line 441, ../sass/_home.scss */
+.search-field {
+  width: 100%;
+  border: 0.1rem solid #0078ef;
+  border-radius: 0.5rem;
+  background: transparent;
+  font-size: 2.1rem;
+  padding: 1.5rem;
+  font-weight: 300;
+}
+
+/* line 451, ../sass/_home.scss */
+.inline-search {
+  position: relative;
+}
+
+/* line 455, ../sass/_home.scss */
+.search-icon {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  z-index: -1;
+  transition: .15s;
+}
+
+/* line 463, ../sass/_home.scss */
+.label {
+  text-transform: none;
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1rem 0 0 1rem;
+}
+
+/* line 471, ../sass/_home.scss */
+.autocomplete-suggestions {
+  left: 1.5rem !important;
+}
+
+/* line 475, ../sass/_home.scss */
+.autocomplete-suggestion {
+  font-size: 2.1rem;
+  margin: 1rem 0;
+}
+/* line 479, ../sass/_home.scss */
+.autocomplete-suggestion b {
+  font-weight: 300;
+}
+/* line 483, ../sass/_home.scss */
+.autocomplete-suggestion.selected {
+  background: transparent;
+  color: #0078ef;
+}
+
+/*
+@import '768';
+@import '660';
+@import '320';
+@import 'fonts';
+*/

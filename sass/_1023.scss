@@ -1,0 +1,260 @@
+// _1023.scss
+
+@media only screen and (max-width: 1023px) {
+
+.hero {
+
+	.travel-bar {
+		left: 4rem;
+
+		.deals, .destinations {
+			width: 30rem;
+			font-size: 2rem;
+		}
+
+		.chosen-container-single {
+			width: 30rem !important;
+
+			.chosen-search {
+
+				input[type="text"] {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		.chosen-container {
+			font-size: 2rem;
+
+			.chosen-results {
+
+				li {
+					font-size: 2rem;
+					line-height: 1.1;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.input-arrow {
+			right: 13.8rem;
+		}
+
+		.arrow {
+			left: -1.3rem;
+		}
+	}
+
+	.icon-bar {
+		width: 100%;
+		margin: 3rem auto;
+
+		a, a:hover, a:active, a:visited, a:link {
+			width: 8.5rem;
+			height: 8.5rem;
+			margin: 0 0 2rem 2rem;
+
+			&:first-of-type {
+				margin-left: 0;
+
+				p {
+					max-width: 5rem;
+				}
+			}
+
+			&:last-of-type {
+
+				svg {
+					margin: 1.4rem 1rem 1rem 1rem;
+				}
+			}
+
+			svg {
+				margin: 1rem 1rem 0.8rem 1rem;
+			}
+
+			p {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+.main-content {
+	max-width: 76.8rem;
+	padding: 0 2rem;
+
+	.row {
+		margin: 0;
+
+		.featured-content {
+			width: 72.8rem;
+			margin:0 0 2rem 0;
+
+			.featured-deal {
+
+				.deal-image {
+					height: 36.4rem;
+				}
+			}
+		}
+
+		.secondary-content {
+			width: 72.8rem;
+			margin: 0;
+
+			.internal-ad {
+				height: 22.95rem;
+				width: calc(50% - 1rem);
+				float: left;
+				margin: 0 2rem 1rem 0;
+			}
+
+			.secondary-deal {
+				width: calc(50% - 1rem);
+				float: left;
+
+				footer {
+
+					.footer {
+						margin: 0 0 0 1.5rem;
+					}
+				}
+
+				.deal-image {
+					height: 17.95rem;
+				}
+			}
+		}
+
+		&.deals-with-circles {
+			width: 72.8rem;
+			height: auto;
+			margin: -1rem 0 0 0;
+
+			.circle {
+				left: 4rem;
+				transform: scale(0.9) translateY(-1.7rem) translateX(1rem);
+			}
+
+			.promo {
+				height: 22.95rem;
+
+				&:nth-of-type(1) {
+					width: calc(50% - 1rem);
+				}
+			}
+
+			.blog {
+				height: 22.95rem;
+				width: calc(50% - 1rem);
+				float: left;
+				margin: 0 0 2rem 2rem;
+			}
+
+			.blog + .promo {
+				height: 22.95rem;
+				width: 100%;
+
+				// .circle {
+				// 	left: 23rem;
+				// }
+			}
+		}		
+	}
+
+	.row-of-deals {
+
+		.secondary-deal {
+			width: calc(50% - 1rem);
+			margin: 0 2rem 1rem 0;
+
+			&:nth-of-type(2) {
+				margin: 0 0 1rem 0;
+			}
+
+			&:last-of-type {
+				margin: 0 0 1rem 0;
+				width: 35.4rem;
+			}
+
+			.deal-image {
+				height: 17.95rem;
+			}
+		}
+	}
+
+	.deals-with-promo {
+		margin: 0 0 1rem 0;
+	}
+
+	.big-deal {
+
+		.featured-content {
+
+			.featured-deal {
+
+				footer {
+					height: 11.1rem;
+
+					p {
+						width: 90%;
+					}
+				}
+			}
+		}
+
+		.secondary-content {
+
+			.secondary-deal {
+				margin: 0 1rem 2rem 0;
+				width: calc(50% - 1rem);
+				float: left;
+			}
+
+			.internal-ad {
+				height: 22.95rem;
+				margin: 0 0 0 1rem;
+
+				.circle {
+					left: 4rem;
+					transform: scale(0.9) translateY(-1.7rem) translateX(1rem);
+				}
+
+				&.footer-option {
+					height: 18rem;
+
+					.circle {
+						transform: scale(0.65) translateY(-7.6rem);	
+					}
+				}
+			}
+		}
+	}
+}
+
+.secondary-deal {
+
+	.footer-option {
+		position: relative;
+	    top: -5.8rem;
+	    background-color: rgba(255,255,255,0.75);
+	    padding: 1rem !important;
+	    margin-bottom: -6rem;
+	}
+}
+
+.move-it {
+    position: relative;
+    top: -74.4rem;
+    left: 37.4rem;
+}
+
+.blog + .promo {
+    position: relative;
+    width: calc( 50% - 1rem) !important;
+    top: -49.9rem;
+    margin-bottom: -24rem;
+}
+
+} 

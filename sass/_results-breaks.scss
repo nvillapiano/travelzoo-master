@@ -1,0 +1,236 @@
+// _results-breaks.scss
+
+@media only screen and (max-width: 1060px) {
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	.more-vacations {
+
+		.vacations-wrapper {
+
+			.vacation {
+
+				.copy {
+					margin: 2rem 0 0 2rem;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+	.results-page {
+
+		.more-vacations {
+
+			.vacations-wrapper {
+
+				.vacation {
+
+					.copy {
+						margin: 0 0 0 1rem;
+
+						.fast-facts {
+							width: 50%;
+							float: left;
+
+							.title {
+								width: 90%;
+							}
+
+							.location {
+							    margin: 0 0 2.5rem 0;	
+							}
+						}
+
+						.description-wrapper {
+						    width: calc(50% - 2rem);
+						    float: right;
+						    margin: -2rem 2rem 0 0;
+
+							.description {
+								position: relative;
+								right: initial;
+								top: initial;
+								width: 100%;
+							}
+
+							.source {
+								position: relative;
+								bottom: initial;
+								margin: 1rem 0 2rem 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.expert-tip {
+
+			.tip {
+				display: block;
+				margin: 0 0 1rem 0;
+			}
+
+			.expert {
+				display: block;
+				margin: 1.5rem 0 0 0;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.results-page {
+
+		.filter-bar {
+
+			.deals-dates {
+				float: none;
+				text-align: center;
+				margin: -1.5rem 0 0;
+
+				.number-of-deals {
+
+					aside {
+						display: inline-block;
+					}
+				}
+
+				.date-picker {
+					display: none;
+				}
+			}
+
+			.map-list {
+				display: none;
+			}
+
+			.sort-bar {
+				width: 100%;
+
+				.date-picker {
+					display: inline-block;
+					float: left;
+				}
+
+				.sort-by {
+					display: none;
+				}
+
+				.filter {
+					display: none;
+				}
+
+				.mobile-icons {
+					display: inline-block;
+					float: right;
+
+					img {
+						margin: 0 1rem 0 0;
+
+						&:last-of-type {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.more-vacations {
+			margin: 0;
+
+			.vacations-wrapper {
+
+				.vacation {
+
+					.copy {
+
+						.fast-facts {
+							width: 100%;
+
+							.title {
+								width: calc(100% - 1rem);
+							}
+						}
+
+						.description-wrapper {
+							width: 100%;
+							float: left;
+							margin: -1rem 0 0;
+
+							.description {
+								display: none;
+							}
+
+							.source {
+								position: relative;
+	    						bottom: initial;	
+								
+								span + span {
+									display: none;
+								}
+							}							
+						}
+					}
+				}
+			}
+		}
+
+		.deals-list {
+
+			.quick-deal {
+
+				.details {
+					clear: both;
+					width: 100%;
+					margin: 0 0 0 0;
+
+					.dates {
+						clear: left;
+						margin: 0.5rem 0 0;
+					}
+				}
+
+				.details + .details {
+					margin: 2.5rem 0 0 0;
+				}
+			}
+		}
+
+		.expert-tip {
+
+			.quotation {
+			    font-size: 1.4rem;
+			    width: 70%;
+			    display: block;
+			    margin: 0 auto;
+			}
+		}
+
+		.mobile-footer {
+		    float: left;
+    		width: 100%;	
+		}
+	}
+
+}
+
+@media only screen and (max-width: 660px) {
+
+}
+
+@media only screen and (max-width: 398px) {
+
+}
+
+

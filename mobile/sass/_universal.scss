@@ -1,0 +1,30 @@
+// _universal.scss
+
+@charset "UTF-8";
+
+html {
+    overflow-x: hidden;
+    width: 400px;	
+}
+
+body {
+	width: 40rem;
+    background: grey;
+	font-family: $open-sans;
+	font-weight: 300;  
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.header, .footer {
+
+	img {
+		width: 100%;
+		float: left;
+	}
+}

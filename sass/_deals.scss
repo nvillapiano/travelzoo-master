@@ -1,0 +1,861 @@
+// _deals.scss
+
+$col1-width: calc(70.389% - 1rem);
+$col2-width: calc(29.612% - 1rem);
+
+
+.deals-page {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+	background: #fff;
+
+	.hero {
+		display: none;
+	}	
+
+	.main-content {
+	    padding: 0 2rem;
+	    max-width: 107rem;
+	}
+
+	h6 {
+		font-weight: 600;
+		font-size: 1.3rem;
+		line-height: 1;
+		margin: 0 0 2rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul, li {
+		list-style: none;
+	}
+
+	.footer {
+		clear: both;
+	}
+}
+
+.lockbar {
+    background: #fff;
+    color: $blue;
+    font-size: 1.4rem;
+    text-transform: uppercase;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0.1rem 0 0.3rem rgba(0,0,0,.15);
+    transform: translateY(-100%);
+    transition: transform .3s;
+
+    .lockbar-wrapper {
+    	width: 100%;
+    	max-width: 103rem;
+    	margin: 0 auto;
+    }
+
+	.logo {
+		width: 8rem;
+	    float: left;
+	    margin: 0.6rem 2rem 0 0;
+	}
+
+	.title {
+		display: inline-block;
+		margin: 0.5rem 0 0 0;
+
+		a, a:hover, a:active, a:visited, a:link {
+			color: $blue;
+		}
+
+		.arrow {
+			width: 1.5rem;
+    		transform: rotate(90deg);
+		}
+	}
+
+	.deal {
+		display: inline-block;
+		vertical-align: bottom;
+		float: right;
+		margin: 0 0 0 0;
+
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.price {
+			margin: 0 1rem 0 0;
+		}
+
+		.headline {
+			color: #000;
+			text-transform: none;
+			margin: 0 2rem 0 0;
+		}
+
+		.book-now {
+			color: #fff;
+			background: $blue;
+			padding: 0.5rem 1.5rem;
+			border-radius: 3rem;
+			margin: 0 2rem 0 0;
+		}
+
+		.fav {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	&.animate {
+		transform: translateY(0);
+	}
+}
+
+.deals-hero {
+	width: 66rem;
+    margin: 0 auto;
+    position: relative;
+    left: 2.5rem;
+
+	.input1, .input2 {
+		border: 0.1rem solid $blue;
+		border-radius: 0.5rem;
+		padding: 1rem 1.5rem;
+		margin: 0 1.6rem 0 0;
+		width: 29.5rem;
+		display: inline-block;
+		vertical-align: middle;
+		text-transform: uppercase;
+		color: $blue;
+		font-size: 1.6rem;
+
+		img {
+		    width: 0.8rem;
+    		transform: rotate(90deg);
+    	    position: relative;
+		    top: 0.2rem;
+		    left: 6rem;
+		}
+	}
+
+	.deals-arrow {
+		width: 3rem;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.input-mobile {
+		display: none;
+	}
+}
+
+.deals-hero-footer {
+    height: 1rem;
+    width: 100%;
+    margin: 2rem 0 0;
+    background: $super-light-grey url("../images/hero-footer.png");
+    background-size: 2.7rem;
+    background-repeat: repeat-x;
+    z-index: 1;		
+}
+
+.deal-wrapper {
+	float: left;
+	padding: 2rem 0;	
+    margin: 0 0 1rem 0;
+
+	.images {
+		width: 71.5rem;
+		width: $col1-width;
+		float: left;
+		display: inline-block;
+
+		.pagination {
+			float: left;
+			color: $blue;
+			font-size: 1.3rem;
+			font-weight: 600;
+
+			span:nth-of-type(2) {
+				margin: 0 3rem;
+			}
+		}
+
+		.photo-cred {
+			float: right;
+			text-transform: uppercase;
+			color: rgba(0,0,0,0.5);
+			font-size: 1rem;
+
+			img, span {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 0 0 0.5rem;
+			}
+		}
+	}
+
+	.copy {
+		@extend .images;
+		width: 29.5rem;
+    	width: $col2-width;		
+		margin: 0 0 0 2rem;
+
+		.price {
+			font-size: 2.1rem;
+			color: $blue;
+			font-weight: 400;
+		}
+
+		.title {
+			@extend .price;
+			color: #000;
+			line-height: 1.1;
+			margin: 0.5rem 0;
+		}
+
+		.location {
+			font-size: 1.2rem;
+			font-weight: 400;
+			text-transform: uppercase;	
+			line-height: 1;
+		}
+
+		.action-bar {
+			float: left;
+			margin: 2rem 0;
+			
+			.book-now {
+				background: $blue;
+				color: #fff;
+				font-size: 1.3rem;
+				text-transform: uppercase;
+				border-radius: 5rem;
+				padding: 0.35rem 2.25rem;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 0 0 2rem;
+
+				&:nth-of-type(5) {
+					display: none;
+				}
+			}
+		}
+
+		.description {
+			clear: both;
+		}
+
+		.source {
+			font-size: 1.2rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin: 2rem 0 0;
+
+			a {
+				color: #000;
+			}
+		}
+	}
+}
+
+.tabs {
+	clear: both;
+	position: relative;
+	margin: 4rem 0;
+
+	ul {
+		width: 54rem;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: block;
+			float: left;
+			border: 0.1rem solid $grey;
+			border-radius: 0.5rem;
+			padding: 0.5rem;
+			width: 18rem;
+			background: #fff;
+			position: relative;
+			z-index: 2;
+			transition: all .15s;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			a, a:hover, a:active, a:visited, a:link {
+				color: $blue;
+				text-transform: uppercase;
+				font-size: 1.4rem;
+				font-weight: 600;
+			}
+
+			&:nth-of-type(1) {
+			    border-top-right-radius: 0;
+    			border-bottom-right-radius: 0;
+    			border-right: 0;	
+			}
+
+			&:nth-of-type(2) {
+				border-radius: 0;
+			}
+
+			&:nth-of-type(3) {
+			    border-top-left-radius: 0;
+    			border-bottom-left-radius: 0;
+    			border-left: 0;	
+			}
+
+			&.active-tab {
+				background: $super-light-grey;
+
+				a, a:hover, a:active, a:visited, a:link {
+					color: #000;
+				}
+			}	
+		}
+	}
+
+	.hr {
+		height: 0.1rem;
+		background: $super-light-grey;
+		width: 100%;
+		position: absolute;
+		top: 1.6rem;
+		z-index: 1;
+	}
+}
+
+.deal-guts {
+	clear: both;
+	float: left;
+	margin: 4rem 0 1rem;
+
+	.the-deal {
+		// opacity: 0;
+		// z-index: -1;
+		// transition: opacity .15s, z-index .15s;
+		display: none;
+
+		.col1 {
+			width: 71.5rem;
+			width: $col1-width; 
+			float: left;
+
+			ul {
+				margin: 0 0 4rem;
+				width: 95%;
+
+				li {
+					margin: 0 0 2rem 1.7rem;
+					list-style-image: url('../images/grey-square.png');
+					padding: 0 0 0 1rem;
+				}
+			}
+		}
+
+		.col2 {
+		    width: 29.5rem;
+		    width: $col2-width;	
+		    margin: 0 0 0 2rem;
+		    float: left;
+
+		    h6 {
+		    	margin: 4rem 0 1rem 0;
+		    }
+
+		    .deal-expert {
+
+		    	.credentials {
+		    		display: inline-block;
+		    		vertical-align: middle;
+		    		line-height: 1.2;
+		    	}
+
+		    	img {
+		    		@extend .credentials;
+		    		margin: 0 1rem 0 0;
+		    	}
+		    }
+
+		    blockquote {
+			    clear: both;
+			    font-style: italic;
+			    font-size: 2.4rem;
+			    line-height: 1.2;
+			    font-weight: 300;
+			    margin: 4rem 0 0;
+
+			    &:before {
+				    content: "";
+				    background: url("../images/quotation-mark.png") no-repeat left top;
+				    background-size: cover;
+				    width: 2.4rem;
+				    height: 1.4rem;
+				    display: inline-block;
+				    margin: 0 0 0 -2.4rem;
+				    position: relative;
+				    top: -1rem;
+			    }
+		    }
+
+		    .indent {
+		    	text-indent: 1rem;
+		    }
+
+		    a, a:hover, a:active, a:visited, a:link {
+		    	color: $blue;
+		    }
+
+		    .see-map {
+		    	margin: 1rem 0 0;
+
+		    	img {
+		    		display: inline-block;
+		    		vertical-align: top;
+		    		margin: 0 0.5rem 0 0;
+		    	}
+
+		    	a {
+		    		text-transform: uppercase;
+		    		font-size: 1.3rem;
+		    	}
+		    }
+		}
+
+		&.details {
+		    position: relative;
+    		float: left;	    		
+    		// margin-top: -70.1rem;
+    		// opacity: 0;
+    		// z-index: -1;
+    		// transition: opacity .15s, z-index .15s;
+    		display: none;
+
+    		p {
+    			margin: 0 0 4rem 0;
+    		}
+		}
+	}
+
+	.reviews {
+		width: 100%;
+		float: left;
+		clear: both;
+		// margin-top: -71.8rem;
+		// opacity: 0;
+		// z-index: -1;
+		// transition: opacity .15s, z-index .15s;
+		display: none;
+
+		.review-intro {
+			float: left;
+			margin: 0 0 4rem 0;
+
+			div {
+				float: left;
+				margin: 0 2rem 0 0;
+			}
+
+			.up-or-down {
+				width: 8.5rem;
+				width: calc(10.195% - 2rem);
+				text-align: center;
+			}
+
+			.copy {
+			    width: 40rem;
+			    width: calc(38.4% - 2rem);
+			    position: relative;
+			   	top: -0.8rem;
+
+			    .headline {
+				    font-size: 2.1rem;
+				    line-height: 1.5;
+			    }
+
+			    .disclaimer {
+			    	color: $light-grey;
+			    	font-size: 1.2rem;
+			    	line-height: 1;
+			    	margin: 2rem 0 0;
+			    }
+			}
+
+			.ratings {
+				margin: 0;
+				width: 50.5rem;
+				width: 51.4%;
+
+				ul {
+
+					li {
+						float: left;
+						text-align: center;
+						margin: 0 0 0 2rem;
+						width: 8.5rem;
+						width: calc(20.695% - 2rem);
+
+						&:first-of-type {
+							margin: 0;
+						}
+
+						img {
+							display: block;
+						}
+
+						div {
+							margin: 0.5rem 0 0 0;
+							float: none;
+
+							strong {
+								display: block;
+								margin: -0.5rem 0 0 0;
+							}
+						}
+					}
+				}
+
+			}
+		}
+
+		.row {
+			border-bottom: 0.1rem solid $super-light-grey;
+			margin: 0 0 3rem;
+			padding: 0 0 2rem;
+
+			h6 {
+				margin: 0 0 1rem 0;
+			}
+
+			.overall {
+				width: 8.5rem;
+				width: calc(10.195% - 2rem);
+				margin: 0 2rem 0 0;
+				float: left;
+
+				img {
+					margin: 0.5rem 0 0;
+				}
+			}
+
+			.enjoyed-most {
+				@extend .overall;
+				width: 29.5rem;
+				width: $col2-width;	
+			}
+
+			.other-comments {
+				@extend .overall;
+				width: 40rem;
+				width: calc(40.777% - 2rem);
+			}
+
+			.posted-by {
+				@extend .overall;
+				width: 19rem;
+				width: 18%;
+				margin: 0;
+
+				strong {
+					display: block;
+				}
+
+				.date {
+					display: block;
+				}
+
+				.address {
+					@extend .date;
+				}
+			}
+
+			&.headings {
+
+			}
+
+			&.review {
+
+				p {
+					width: 85%;
+					margin: 0;
+
+					span {
+						display: none;
+					}
+				}
+
+				.posted-by {
+					color: $light-grey;
+				}			
+			}
+
+			&:nth-of-type(4) {
+
+				.overall {
+
+					img {
+						transform: rotateX(180deg);
+					}
+				}
+			}	
+		}
+	}
+}
+
+.show-me {
+	display: block !important;
+}
+
+.need-help {
+	clear: both;
+	// opacity: 0;
+	// z-index: -1;
+	// transition: opacity .15s, z-index .15s;	
+	display: none;
+
+	h6 {
+		margin: 0 0 1rem 0;
+	}
+
+	ul {
+
+		li {
+			display: inline-block;
+			margin: 0 4rem 0 0;
+
+			&:last-of-type {
+				margin: 0;
+			}
+
+			a, a:hover, a:active, a:visited, a:link {
+				color: $blue;
+			}
+		}
+	}
+
+	div {
+		font-size: 1.2rem;
+		margin: 0.5rem 0 0 0;
+	}
+}
+
+.more-vacations {
+	clear: both;
+	margin: 3rem 0 0 0;
+
+	.vacations-intro {
+		position: relative;
+		margin: 0 0 3rem 0;
+
+		div {
+			text-align: center;
+		    text-transform: uppercase;
+		    font-size: 2.1rem;
+		    font-weight: 300;
+		    color: $grey;
+		    margin: 0 auto;
+		    width: 33rem;
+		    background-color: #fff;
+		    position: relative;
+		    z-index: 2;			
+		}
+
+		.hr {
+			width: 100%;
+			display: block;
+			height: 0.1rem;
+			background: $grey;
+			position: absolute;
+			top: 1rem;
+			z-index: 1;
+		}
+	}
+
+	.vacations-wrapper {
+
+		.vacation {
+		    clear: left;
+		    margin: 0 0 1rem 0;
+		    float: left;
+
+			.image {
+				width: 50.5rem;
+				width: calc(50.244% - 1rem);
+				float: left;
+			}
+
+			.copy {
+				width: 50rem;
+				width: calc(49.515% - 1rem);
+				float: left;
+				margin: 2rem 0 0 2rem;
+
+				.price {
+				    font-size: 2.1rem;
+				    color: #0078ef;
+				    font-weight: 400;
+				}
+
+				.title {
+					@extend .price;
+				    color: #000;
+    				line-height: 1.1;
+    				margin: 0.5rem 0;	
+				}
+
+				.location {
+				    font-size: 1.2rem;
+				    font-weight: 400;
+				    text-transform: uppercase;
+				    line-height: 1;					
+				}
+
+				.description {
+					margin: 2rem 0 0;
+				}
+
+				.source {
+				    font-size: 1.2rem;
+				    font-weight: 400;
+				    text-transform: uppercase;
+
+				    a, a:hover, a:active, a:visited, a:link {
+				    	color: #000;
+				    }
+				}
+
+				.link {
+					text-transform: uppercase;
+					margin: 2rem 0 0;
+
+					a, a:hover, a:active, a:visited, a:link {
+						color: $blue;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.more-deals {
+	top: 1rem;
+
+	div {
+	    color: #0078ef;
+	    font-size: 1.8rem;
+	    text-transform: uppercase;
+	    padding: 1.2rem 2rem;
+	    border: 0.1rem solid;
+	    border-radius: 5rem;
+	    width: 30rem;
+	    margin: 0 auto;
+	    font-weight: 300;
+	}
+}
+
+.great-deals {
+    float: left;
+    clear: both;
+    margin: 0 0 4rem 0;
+
+	.great-deals-intro {
+	    position: relative;
+	    margin: 0 0 3rem 0;
+
+		div {
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-size: 2.1rem;
+		    font-weight: 300;
+		    color: #a4a4a4;
+		    margin: 0 auto;
+		    width: 23rem;
+		    background-color: #fff;
+		    position: relative;
+		    z-index: 2;
+		}
+
+		.hr {
+		    width: 100%;
+		    display: block;
+		    height: 0.1rem;
+		    background: #a4a4a4;
+		    position: absolute;
+		    top: 1rem;
+		    z-index: 1;
+		}
+	}
+
+	.grid {
+
+		ul {
+			text-align: center;
+
+			li {
+				margin: 0 0 0 2rem;
+				float: left;
+				width: calc(20% - 1.6rem);
+
+				&:nth-of-type(1), &:nth-of-type(6) {
+					margin: 0;
+				}
+
+				img {
+					margin: 0 0 1.5rem 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}
+
+// Grid overlay
+.grid-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0;
+	background: grey;
+	width: 128rem;
+	height: 100vh;
+	margin: 0 auto;
+	overflow: hidden;
+
+	&.grid-on {
+		opacity: 0.35;
+		z-index: 999;
+	}
+
+	div {
+		background: pink;
+		margin: 0 2rem 0 0;
+		width: 8.5rem;
+		height: 100vh;
+		float: left;
+
+		&:first-of-type {
+			margin-left: 2rem;
+		}
+	}
+}

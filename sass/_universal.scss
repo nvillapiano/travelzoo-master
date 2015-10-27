@@ -1,0 +1,229 @@
+// _universal.scss
+
+@charset "UTF-8";
+
+html {
+	overflow-x: hidden; 
+}
+
+body {
+	width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: $open-sans;
+	font-weight: 300;
+	overflow-x: hidden; 
+	-webkit-font-smoothing: antialiased;
+}
+
+.header, .body-footer {
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+}
+
+.header {
+	position: relative;
+	padding: 1rem 2rem 1.5rem;
+	
+	div {
+		width: 33.333%;
+		display: inline-block;
+	}
+
+	a, a:hover, a:active, a:visited, a:focus, a:link {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.header-deals {
+		float: left;
+
+		a, a:hover, a:active, a:visited, a:focus, a:link {
+			color: $red;
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+	}
+
+	.logo {
+		text-align: center;
+
+		img {
+			max-width: 25rem;
+		}
+	}
+
+	.account {
+		float: right;
+		margin: -0.3rem 0 0;
+
+		a, span {
+			float: right;
+			color: $blue;
+			font-size: 1.2rem;
+			font-weight: 400;
+			margin: 0.4rem 0 0 0;
+		}
+
+		span {
+			color: #000;
+			margin: 0.4rem 0.5rem;
+		}
+
+		.fb-like {
+			margin: 0 2rem 0 0;
+		}
+
+		.flag {
+			margin: 0.3rem 0 0 2rem;
+		}
+	}
+
+	.account-icon {
+		display: none;
+	}
+
+}
+
+.footer {
+	display: block;
+
+	nav {
+		margin: 0 2rem;
+		
+		.logo {
+			max-width: 20rem;
+			float: left;
+			margin: 0 0 0.5rem 0;
+		}
+
+		ul {
+			float: right;
+			position: relative;
+			top: 2rem;
+
+			li {
+				float: left;
+				margin: 0 0 0 3rem;
+
+				a, a:hover, a:active, a:visited, a:focus, a:link {
+				    color: $blue;
+				    font-size: 1.4rem;
+				    font-weight: 600;
+				    text-transform: uppercase;
+				    text-decoration: none;					
+				}
+			}
+		}
+	}
+
+	.sub-footer {
+		clear: both;
+		float: left;
+		width: 100%;
+		padding: 2rem;
+		background: $super-light-grey url('../images/hero-footer.png') left top;
+		background-size: 2.7rem;
+		background-repeat: repeat-x;
+
+		.social-links {
+			float: left;
+
+			a, a:hover, a:active, a:visited, a:focus, a:link {
+			    color: $blue;
+			    font-size: 1.4rem;
+			    font-weight: 600;
+			    text-transform: uppercase;
+			    text-decoration: none;
+			    display: inline-block;
+			    vertical-align: middle;
+			    margin: 0 3rem 0 0;
+
+			    img {
+			    	display: inline-block;
+			    	vertical-align: middle;
+			    }					
+
+			    span {
+			    	display: inline-block;
+			    	vertical-align: middle;
+			    	margin: 0 0 0 1rem;
+			    }
+			}			
+		}
+
+		.newsletter {
+			float: right;
+			position: relative;
+			top: 1rem;
+
+			span {
+				color: #f24636;
+    			font-size: 1.4rem;
+    			font-weight: 600;
+    			text-transform: uppercase;
+    			margin: 0 2rem 0 0;
+			}
+
+			input {
+			    border: none;
+			    background: transparent;
+			    border-bottom: .2rem solid $blue;
+			    width: 28rem;
+			    padding: 0 0 0.5rem 0;
+			    color: #bbb;
+			    font-size: 1.4rem;
+			}
+
+			.arrow {
+				width: 2rem;
+				margin: 0 0 0 -2.4rem;
+			}
+		}
+	}
+
+	.sub-sub-footer {
+		clear: both;
+		background: $super-light-grey;
+		float: left;
+		width: 100%;
+		padding: 0 2rem 2rem 2rem;
+		position: relative;
+
+		.colophon {
+			position: absolute;
+			bottom: 2rem;
+			color: $grey;
+			font-size: 1.1rem;
+			font-weight: 400;
+
+			a, a:hover, a:active, a:visited, a:focus, a:link {
+				color: $grey;
+				text-decoration: underline;
+			}
+
+			span {
+				margin: 0 0.5rem;
+			}
+
+			div:first-of-type {
+				margin: 0 0 0.7rem 0;
+			}
+		}
+
+		.app-links {
+			float: right;
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.mobile-footer {
+	display: none;
+}
