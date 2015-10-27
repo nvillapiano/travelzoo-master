@@ -463,3 +463,18 @@
 		</div>
 		
 	</section>
+
+	<section class="grid-overlay">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>	

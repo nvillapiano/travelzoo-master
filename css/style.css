@@ -176,7 +176,7 @@ body {
 /* line 44, ../sass/_universal.scss */
 .header .header-deals a, .header .header-deals a:hover, .header .header-deals a:active, .header .header-deals a:visited, .header .header-deals a:focus, .header .header-deals a:link {
   color: #f24636;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 /* line 51, ../sass/_universal.scss */
@@ -185,7 +185,7 @@ body {
 }
 /* line 54, ../sass/_universal.scss */
 .header .logo img {
-  max-width: 25rem;
+  max-width: 19rem;
 }
 /* line 59, ../sass/_universal.scss */
 .header .account {
@@ -196,7 +196,7 @@ body {
 .header .account a, .header .account span {
   float: right;
   color: #0078ef;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin: 0.4rem 0 0 0;
 }
@@ -349,13 +349,14 @@ body {
 /* line 217, ../sass/_universal.scss */
 .footer .sub-sub-footer .app-links {
   float: right;
+  visibility: hidden;
 }
-/* line 220, ../sass/_universal.scss */
+/* line 221, ../sass/_universal.scss */
 .footer .sub-sub-footer .app-links a {
   text-decoration: none;
 }
 
-/* line 227, ../sass/_universal.scss */
+/* line 228, ../sass/_universal.scss */
 .mobile-footer {
   display: none;
 }
@@ -596,10 +597,10 @@ p {
   height: 1rem;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -0.2rem;
   left: 0;
   background: url("../images/hero-footer.png");
-  background-size: 2.7rem;
+  background-size: 2.3rem;
   background-repeat: repeat-x;
   z-index: 1;
 }
@@ -3601,16 +3602,6 @@ p {
   /* line 9, ../sass/_900.scss */
   .footer nav .logo {
     margin: 0 0 1rem 0;
-  }
-  /* line 13, ../sass/_900.scss */
-  .footer nav ul {
-    top: 0.5rem;
-  }
-  /* line 18, ../sass/_900.scss */
-  .footer nav ul li:last-of-type {
-    display: block;
-    clear: both;
-    margin: 1rem 0 0 3rem;
   }
   /* line 33, ../sass/_900.scss */
   .footer .sub-footer .social-links a:first-of-type, .footer .sub-footer .social-links a:hover:first-of-type, .footer .sub-footer .social-links a:active:first-of-type, .footer .sub-footer .social-links a:visited:first-of-type, .footer .sub-footer .social-links a:link:first-of-type {
