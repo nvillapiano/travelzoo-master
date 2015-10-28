@@ -6,20 +6,61 @@
 		</div>
 
 		<div class="travel-bar">
-			<select name="Deals" class="deals" data-placeholder="Find Deals on Travel" tabindex="1">
+
+			<input type="text" name="Destinations" class="destinations" placeholder="Where do you want to go?">
+
+			<div class="paris">
+
+				<header>
+					<img src="images/paris.png" alt="Paris">
+					<div class="entry-title">
+						<strong>Paris</strong> France <span>(26 deals)</span>
+					</div>
+					<div class="entry-description">
+						The City of Lights. Visit the world capital of fine arts, cuisine, and Continental culture.
+					</div>
+					<div class="entry-title">
+						<strong>Paris</strong> TX, United States
+					</div>
+					<div class="entry-title">
+						<strong>Paris</strong>h County WV, United States
+					</div>					
+				</header>
+
+				<footer>
+					<div class="entry-title">
+						The Best of Europe's Capitals <span>(15 deals)</span>
+					</div>
+					<div class="entry-description">
+						We spent six months hand-selecting hotels and chateaux in Paris, Vienna, Lisbon, and a dozen other historis destinations.
+					</div>
+					<div class="entry-footer">
+						 <img src="images/expert.png" alt="Expert">
+						 <span>
+						 	Recommendations from Marybeth, our Europe Travel Expert
+						 </span>
+					</div>
+				</footer>
+				
+			</div>
+
+			<select name="Deals" class="deals" data-placeholder="All Deals" tabindex="1">
 				<!-- <option data-img-src="images/clock-small.svg"></option> -->
  				<option></option>			
+				<option value="all-deals">All Deals</option>
+				<option value="vacations">Vacations</option>
 				<option value="hotels">Hotels</option>
-				<option value="car-rentals-and-ground-transportation">Car Rentals & Ground Transportation</option>
-				<option value="cruises">Cruises</option>
 				<option value="flights">Flights</option>
-				<option value="museums-and-art">Museums &amp; Art</option>
-				<option value="restaurants">Restaurants</option>
-				<option value="shows-concerts-and-performances">Shows, Concerts, &amp; Performances</option>
-				<option value="spas">Spas</option>
-			</select>
+				<option value="cruises">Cruises</option>
+				<option value="car-rentals">Car rentals</option>
+				<option value="spa">Spa</option>
+				<option value="shows-concerts-theater">Shows, Concerts, & Theater</option>
+				<option value="museums-art">Museums & Art</option>
+				<option value="sports-events">Sports events</option>
+				<option value="theme-parks">Theme Parks</option>
+				<option value="tours">Tours</option>
 
-			<input type="text" name="Destinations" class="destinations" placeholder="All Destinations">
+			</select>
 
 			<div class="input-arrow">
 				<img src="images/arrow-down.svg" alt="Search carrot">
