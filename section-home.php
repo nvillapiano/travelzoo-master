@@ -45,9 +45,8 @@
 			</div>
 
 			<select name="Deals" class="deals" data-placeholder="All Deals" tabindex="1">
-				<!-- <option data-img-src="images/clock-small.svg"></option> -->
  				<option></option>			
-				<option value="all-deals">All Deals</option>
+				<option selected value="all-deals">All Deals</option>
 				<option value="vacations">Vacations</option>
 				<option value="hotels">Hotels</option>
 				<option value="flights">Flights</option>
@@ -61,6 +60,7 @@
 				<option value="tours">Tours</option>
 
 			</select>
+
 
 			<div class="input-arrow">
 				<img src="images/arrow-down.svg" alt="Search carrot">

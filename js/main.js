@@ -1,7 +1,7 @@
 // Chosen
-$(".deals").chosen({
-	placeholder_text_single: "Find Deals on Travel"
-});
+// $(".deals").chosen({
+// 	placeholder_text_single: "Find Deals on Travel"
+// });
 // $('.deals').on('change', function(evt, params) {
 // 	$(".arrow").addClass('arrow-focus');
 //     $(".input-arrow").addClass('flip');
@@ -17,10 +17,9 @@ $(function(){
         source: function(term, suggest){
             term = term.toLowerCase();
             var choices = [
-                'Helsinki',
+                'Paris',                                                
                 'Thailand', 
                 'South America',
-                'Paris',                                              	
                 'Near Me',
             	];
             var suggestions = [];

@@ -1,5 +1,17 @@
 // _home.scss
 
+::-webkit-input-placeholder {
+   color: rgba(99,99,99,0.52);
+}
+
+::-moz-placeholder { 
+   color: rgba(99,99,99,0.52);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(99,99,99,0.52);
+}
+
 .hero {
 	background: url('../images/hero.gif') center top no-repeat;
 	background-size: cover;
@@ -38,6 +50,10 @@
 
 		.destinations {
 			width: 76rem;
+		}
+
+		.deals {
+			border: none;
 		}
 
 		.chosen-container-single {
@@ -322,17 +338,6 @@
 	fill: $yellow;
 }	
 
-::-webkit-input-placeholder {
-   color: $placeholder-grey;
-}
-
-::-moz-placeholder { 
-   color: $placeholder-grey;
-}
-
-:-ms-input-placeholder {  
-   color: $placeholder-grey;
-}
 
 // More Chosen Styling 
 
