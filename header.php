@@ -16,6 +16,7 @@
 
  	<link rel="stylesheet" type="text/css" href="js/chosen/chosen-mods.css">
  	<link rel="stylesheet" type="text/css" href="js/chosen/imageselect.css">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
  	<link rel="stylesheet" type="text/css" href="js/chosen/jquery.auto-complete.css">
 
 	<link rel="stylesheet" href="css/style.css">

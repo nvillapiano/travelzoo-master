@@ -93,6 +93,7 @@ $('a.flag').click(function(){
 
 // Paris
 $(".destinations").keypress(function(){
+    $('.arrow').addClass('arrow-focus');                    
     setTimeout(
         function() {
             $('.paris').addClass('paris-show');
@@ -100,4 +101,6 @@ $(".destinations").keypress(function(){
     800);
 });
 
-
+$(".deals").select2({
+  minimumResultsForSearch: Infinity
+});
