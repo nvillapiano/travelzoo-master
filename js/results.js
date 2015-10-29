@@ -68,3 +68,9 @@ $('.todays-top-deals, .more-deals').click(function(){
 $('a.flag').click(function(){
     $('.grid-overlay').toggleClass('grid-on')
 });
+
+//interior nav fpo 
+$('div.input1').click(function(){
+    // $('div.input1 span').toggleClass('hide');
+    $('.paris-fpo').toggleClass('show');
+});

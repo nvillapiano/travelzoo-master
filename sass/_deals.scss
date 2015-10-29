@@ -124,7 +124,7 @@ $col2-width: calc(29.612% - 1rem);
 	width: 66rem;
     margin: 0 auto;
     position: relative;
-    left: 2.5rem;
+    left: 8.5rem;
 
 	.input1, .input2 {
 		border: 0.1rem solid $blue;
@@ -134,17 +134,22 @@ $col2-width: calc(29.612% - 1rem);
 		width: 29.5rem;
 		display: inline-block;
 		vertical-align: middle;
-		text-transform: uppercase;
-		color: $blue;
+		color: rgba(99,99,99,0.52);
 		font-size: 1.6rem;
+		position: relative;
+		z-index: 2;
 
 		img {
 		    width: 0.8rem;
     		transform: rotate(90deg);
     	    position: relative;
 		    top: 0.2rem;
-		    left: 6rem;
+		    left: 15.3rem;
 		}
+	}
+
+	.input2 {
+		width: 12.8rem;
 	}
 
 	.deals-arrow {
@@ -155,6 +160,21 @@ $col2-width: calc(29.612% - 1rem);
 
 	.input-mobile {
 		display: none;
+	}
+
+	.paris-fpo {
+		position: absolute;
+		z-index: 1;
+		top: 3.9rem;
+		display: none;
+	}
+
+	.hide {
+		visibility: hidden;
+	}
+
+	.show {
+		display: block;
 	}
 }
 

@@ -106,3 +106,5 @@ $(".destinations").keypress(function(){
 $(".deals").select2({
   minimumResultsForSearch: Infinity
 });
+
+

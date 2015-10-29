@@ -1547,7 +1547,7 @@ p {
   width: 66rem;
   margin: 0 auto;
   position: relative;
-  left: 2.5rem;
+  left: 8.5rem;
 }
 /* line 129, ../sass/_deals.scss */
 .deals-hero .input1, .deals-hero .input2 {
@@ -1558,30 +1558,50 @@ p {
   width: 29.5rem;
   display: inline-block;
   vertical-align: middle;
-  text-transform: uppercase;
-  color: #0078ef;
+  color: rgba(99, 99, 99, 0.52);
   font-size: 1.6rem;
+  position: relative;
+  z-index: 2;
 }
-/* line 141, ../sass/_deals.scss */
+/* line 142, ../sass/_deals.scss */
 .deals-hero .input1 img, .deals-hero .input2 img {
   width: 0.8rem;
   transform: rotate(90deg);
   position: relative;
   top: 0.2rem;
-  left: 6rem;
+  left: 15.3rem;
 }
-/* line 150, ../sass/_deals.scss */
+/* line 151, ../sass/_deals.scss */
+.deals-hero .input2 {
+  width: 12.8rem;
+}
+/* line 155, ../sass/_deals.scss */
 .deals-hero .deals-arrow {
   width: 3rem;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 156, ../sass/_deals.scss */
+/* line 161, ../sass/_deals.scss */
 .deals-hero .input-mobile {
   display: none;
 }
+/* line 165, ../sass/_deals.scss */
+.deals-hero .paris-fpo {
+  position: absolute;
+  z-index: 1;
+  top: 3.9rem;
+  display: none;
+}
+/* line 172, ../sass/_deals.scss */
+.deals-hero .hide {
+  visibility: hidden;
+}
+/* line 176, ../sass/_deals.scss */
+.deals-hero .show {
+  display: block;
+}
 
-/* line 161, ../sass/_deals.scss */
+/* line 181, ../sass/_deals.scss */
 .deals-hero-footer {
   height: 1rem;
   width: 100%;
@@ -1592,74 +1612,74 @@ p {
   z-index: 1;
 }
 
-/* line 171, ../sass/_deals.scss */
+/* line 191, ../sass/_deals.scss */
 .deal-wrapper {
   float: left;
   padding: 2rem 0;
   margin: 0 0 1rem 0;
 }
-/* line 176, ../sass/_deals.scss */
+/* line 196, ../sass/_deals.scss */
 .deal-wrapper .images, .deal-wrapper .copy {
   width: 71.5rem;
   width: calc(70.389% - 1rem);
   float: left;
   display: inline-block;
 }
-/* line 182, ../sass/_deals.scss */
+/* line 202, ../sass/_deals.scss */
 .deal-wrapper .images .pagination, .deal-wrapper .copy .pagination {
   float: left;
   color: #0078ef;
   font-size: 1.3rem;
   font-weight: 600;
 }
-/* line 188, ../sass/_deals.scss */
+/* line 208, ../sass/_deals.scss */
 .deal-wrapper .images .pagination span:nth-of-type(2), .deal-wrapper .copy .pagination span:nth-of-type(2) {
   margin: 0 3rem;
 }
-/* line 193, ../sass/_deals.scss */
+/* line 213, ../sass/_deals.scss */
 .deal-wrapper .images .photo-cred, .deal-wrapper .copy .photo-cred {
   float: right;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
 }
-/* line 199, ../sass/_deals.scss */
+/* line 219, ../sass/_deals.scss */
 .deal-wrapper .images .photo-cred img, .deal-wrapper .copy .photo-cred img, .deal-wrapper .images .photo-cred span, .deal-wrapper .copy .photo-cred span {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 0.5rem;
 }
-/* line 207, ../sass/_deals.scss */
+/* line 227, ../sass/_deals.scss */
 .deal-wrapper .copy {
   width: 29.5rem;
   width: calc(29.612% - 1rem);
   margin: 0 0 0 2rem;
 }
-/* line 213, ../sass/_deals.scss */
+/* line 233, ../sass/_deals.scss */
 .deal-wrapper .copy .price, .deal-wrapper .copy .title, .deal-wrapper .more-vacations .vacations-wrapper .vacation .copy .title, .more-vacations .vacations-wrapper .vacation .deal-wrapper .copy .title {
   font-size: 2.1rem;
   color: #0078ef;
   font-weight: 400;
 }
-/* line 219, ../sass/_deals.scss */
+/* line 239, ../sass/_deals.scss */
 .deal-wrapper .copy .title {
   color: #000;
   line-height: 1.1;
   margin: 0.5rem 0;
 }
-/* line 226, ../sass/_deals.scss */
+/* line 246, ../sass/_deals.scss */
 .deal-wrapper .copy .location {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 233, ../sass/_deals.scss */
+/* line 253, ../sass/_deals.scss */
 .deal-wrapper .copy .action-bar {
   float: left;
   margin: 2rem 0;
 }
-/* line 237, ../sass/_deals.scss */
+/* line 257, ../sass/_deals.scss */
 .deal-wrapper .copy .action-bar .book-now {
   background: #0078ef;
   color: #fff;
@@ -1670,45 +1690,45 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 248, ../sass/_deals.scss */
+/* line 268, ../sass/_deals.scss */
 .deal-wrapper .copy .action-bar img {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 2rem;
 }
-/* line 253, ../sass/_deals.scss */
+/* line 273, ../sass/_deals.scss */
 .deal-wrapper .copy .action-bar img:nth-of-type(5) {
   display: none;
 }
-/* line 259, ../sass/_deals.scss */
+/* line 279, ../sass/_deals.scss */
 .deal-wrapper .copy .description {
   clear: both;
 }
-/* line 263, ../sass/_deals.scss */
+/* line 283, ../sass/_deals.scss */
 .deal-wrapper .copy .source {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
   margin: 2rem 0 0;
 }
-/* line 269, ../sass/_deals.scss */
+/* line 289, ../sass/_deals.scss */
 .deal-wrapper .copy .source a {
   color: #000;
 }
 
-/* line 276, ../sass/_deals.scss */
+/* line 296, ../sass/_deals.scss */
 .tabs {
   clear: both;
   position: relative;
   margin: 4rem 0;
 }
-/* line 281, ../sass/_deals.scss */
+/* line 301, ../sass/_deals.scss */
 .tabs ul {
   width: 54rem;
   margin: 0 auto;
   text-align: center;
 }
-/* line 286, ../sass/_deals.scss */
+/* line 306, ../sass/_deals.scss */
 .tabs ul li {
   display: block;
   float: left;
@@ -1721,42 +1741,42 @@ p {
   z-index: 2;
   transition: all .15s;
 }
-/* line 298, ../sass/_deals.scss */
+/* line 318, ../sass/_deals.scss */
 .tabs ul li:hover {
   cursor: pointer;
 }
-/* line 302, ../sass/_deals.scss */
+/* line 322, ../sass/_deals.scss */
 .tabs ul li a, .tabs ul li a:hover, .tabs ul li a:active, .tabs ul li a:visited, .tabs ul li a:link {
   color: #0078ef;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 600;
 }
-/* line 309, ../sass/_deals.scss */
+/* line 329, ../sass/_deals.scss */
 .tabs ul li:nth-of-type(1) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
 }
-/* line 315, ../sass/_deals.scss */
+/* line 335, ../sass/_deals.scss */
 .tabs ul li:nth-of-type(2) {
   border-radius: 0;
 }
-/* line 319, ../sass/_deals.scss */
+/* line 339, ../sass/_deals.scss */
 .tabs ul li:nth-of-type(3) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: 0;
 }
-/* line 325, ../sass/_deals.scss */
+/* line 345, ../sass/_deals.scss */
 .tabs ul li.active-tab {
   background: #f1f1f1;
 }
-/* line 328, ../sass/_deals.scss */
+/* line 348, ../sass/_deals.scss */
 .tabs ul li.active-tab a, .tabs ul li.active-tab a:hover, .tabs ul li.active-tab a:active, .tabs ul li.active-tab a:visited, .tabs ul li.active-tab a:link {
   color: #000;
 }
-/* line 335, ../sass/_deals.scss */
+/* line 355, ../sass/_deals.scss */
 .tabs .hr {
   height: 0.1rem;
   background: #f1f1f1;
@@ -1766,55 +1786,55 @@ p {
   z-index: 1;
 }
 
-/* line 345, ../sass/_deals.scss */
+/* line 365, ../sass/_deals.scss */
 .deal-guts {
   clear: both;
   float: left;
   margin: 4rem 0 1rem;
 }
-/* line 350, ../sass/_deals.scss */
+/* line 370, ../sass/_deals.scss */
 .deal-guts .the-deal {
   display: none;
 }
-/* line 356, ../sass/_deals.scss */
+/* line 376, ../sass/_deals.scss */
 .deal-guts .the-deal .col1 {
   width: 71.5rem;
   width: calc(70.389% - 1rem);
   float: left;
 }
-/* line 361, ../sass/_deals.scss */
+/* line 381, ../sass/_deals.scss */
 .deal-guts .the-deal .col1 ul {
   margin: 0 0 4rem;
   width: 95%;
 }
-/* line 365, ../sass/_deals.scss */
+/* line 385, ../sass/_deals.scss */
 .deal-guts .the-deal .col1 ul li {
   margin: 0 0 2rem 1.7rem;
   list-style-image: url("../images/grey-square.png");
   padding: 0 0 0 1rem;
 }
-/* line 373, ../sass/_deals.scss */
+/* line 393, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 {
   width: 29.5rem;
   width: calc(29.612% - 1rem);
   margin: 0 0 0 2rem;
   float: left;
 }
-/* line 379, ../sass/_deals.scss */
+/* line 399, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 h6 {
   margin: 4rem 0 1rem 0;
 }
-/* line 385, ../sass/_deals.scss */
+/* line 405, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .deal-expert .credentials, .deal-guts .the-deal .col2 .deal-expert img {
   display: inline-block;
   vertical-align: middle;
   line-height: 1.2;
 }
-/* line 391, ../sass/_deals.scss */
+/* line 411, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .deal-expert img {
   margin: 0 1rem 0 0;
 }
-/* line 397, ../sass/_deals.scss */
+/* line 417, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 blockquote {
   clear: both;
   font-style: italic;
@@ -1823,7 +1843,7 @@ p {
   font-weight: 300;
   margin: 4rem 0 0;
 }
-/* line 405, ../sass/_deals.scss */
+/* line 425, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 blockquote:before {
   content: "";
   background: url("../images/quotation-mark.png") no-repeat left top;
@@ -1835,88 +1855,88 @@ p {
   position: relative;
   top: -1rem;
 }
-/* line 418, ../sass/_deals.scss */
+/* line 438, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .indent {
   text-indent: 1rem;
 }
-/* line 422, ../sass/_deals.scss */
+/* line 442, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 a, .deal-guts .the-deal .col2 a:hover, .deal-guts .the-deal .col2 a:active, .deal-guts .the-deal .col2 a:visited, .deal-guts .the-deal .col2 a:link {
   color: #0078ef;
 }
-/* line 426, ../sass/_deals.scss */
+/* line 446, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .see-map {
   margin: 1rem 0 0;
 }
-/* line 429, ../sass/_deals.scss */
+/* line 449, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .see-map img {
   display: inline-block;
   vertical-align: top;
   margin: 0 0.5rem 0 0;
 }
-/* line 435, ../sass/_deals.scss */
+/* line 455, ../sass/_deals.scss */
 .deal-guts .the-deal .col2 .see-map a {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
-/* line 442, ../sass/_deals.scss */
+/* line 462, ../sass/_deals.scss */
 .deal-guts .the-deal.details {
   position: relative;
   float: left;
   display: none;
 }
-/* line 451, ../sass/_deals.scss */
+/* line 471, ../sass/_deals.scss */
 .deal-guts .the-deal.details p {
   margin: 0 0 4rem 0;
 }
-/* line 457, ../sass/_deals.scss */
+/* line 477, ../sass/_deals.scss */
 .deal-guts .reviews {
   width: 100%;
   float: left;
   clear: both;
   display: none;
 }
-/* line 467, ../sass/_deals.scss */
+/* line 487, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro {
   float: left;
   margin: 0 0 4rem 0;
 }
-/* line 471, ../sass/_deals.scss */
+/* line 491, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro div {
   float: left;
   margin: 0 2rem 0 0;
 }
-/* line 476, ../sass/_deals.scss */
+/* line 496, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .up-or-down {
   width: 8.5rem;
   width: calc(10.195% - 2rem);
   text-align: center;
 }
-/* line 482, ../sass/_deals.scss */
+/* line 502, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .copy {
   width: 40rem;
   width: calc(38.4% - 2rem);
   position: relative;
   top: -0.8rem;
 }
-/* line 488, ../sass/_deals.scss */
+/* line 508, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .copy .headline {
   font-size: 2.1rem;
   line-height: 1.5;
 }
-/* line 493, ../sass/_deals.scss */
+/* line 513, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .copy .disclaimer {
   color: #c1c0c0;
   font-size: 1.2rem;
   line-height: 1;
   margin: 2rem 0 0;
 }
-/* line 501, ../sass/_deals.scss */
+/* line 521, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings {
   margin: 0;
   width: 50.5rem;
   width: 51.4%;
 }
-/* line 508, ../sass/_deals.scss */
+/* line 528, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings ul li {
   float: left;
   text-align: center;
@@ -1924,131 +1944,131 @@ p {
   width: 8.5rem;
   width: calc(20.695% - 2rem);
 }
-/* line 515, ../sass/_deals.scss */
+/* line 535, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings ul li:first-of-type {
   margin: 0;
 }
-/* line 519, ../sass/_deals.scss */
+/* line 539, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings ul li img {
   display: block;
 }
-/* line 523, ../sass/_deals.scss */
+/* line 543, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings ul li div {
   margin: 0.5rem 0 0 0;
   float: none;
 }
-/* line 527, ../sass/_deals.scss */
+/* line 547, ../sass/_deals.scss */
 .deal-guts .reviews .review-intro .ratings ul li div strong {
   display: block;
   margin: -0.5rem 0 0 0;
 }
-/* line 538, ../sass/_deals.scss */
+/* line 558, ../sass/_deals.scss */
 .deal-guts .reviews .row {
   border-bottom: 0.1rem solid #f1f1f1;
   margin: 0 0 3rem;
   padding: 0 0 2rem;
 }
-/* line 543, ../sass/_deals.scss */
+/* line 563, ../sass/_deals.scss */
 .deal-guts .reviews .row h6 {
   margin: 0 0 1rem 0;
 }
-/* line 547, ../sass/_deals.scss */
+/* line 567, ../sass/_deals.scss */
 .deal-guts .reviews .row .overall, .deal-guts .reviews .row .enjoyed-most, .deal-guts .reviews .row .other-comments, .deal-guts .reviews .row .posted-by {
   width: 8.5rem;
   width: calc(10.195% - 2rem);
   margin: 0 2rem 0 0;
   float: left;
 }
-/* line 553, ../sass/_deals.scss */
+/* line 573, ../sass/_deals.scss */
 .deal-guts .reviews .row .overall img, .deal-guts .reviews .row .enjoyed-most img, .deal-guts .reviews .row .other-comments img, .deal-guts .reviews .row .posted-by img {
   margin: 0.5rem 0 0;
 }
-/* line 558, ../sass/_deals.scss */
+/* line 578, ../sass/_deals.scss */
 .deal-guts .reviews .row .enjoyed-most {
   width: 29.5rem;
   width: calc(29.612% - 1rem);
 }
-/* line 564, ../sass/_deals.scss */
+/* line 584, ../sass/_deals.scss */
 .deal-guts .reviews .row .other-comments {
   width: 40rem;
   width: calc(40.777% - 2rem);
 }
-/* line 570, ../sass/_deals.scss */
+/* line 590, ../sass/_deals.scss */
 .deal-guts .reviews .row .posted-by {
   width: 19rem;
   width: 18%;
   margin: 0;
 }
-/* line 576, ../sass/_deals.scss */
+/* line 596, ../sass/_deals.scss */
 .deal-guts .reviews .row .posted-by strong {
   display: block;
 }
-/* line 580, ../sass/_deals.scss */
+/* line 600, ../sass/_deals.scss */
 .deal-guts .reviews .row .posted-by .date, .deal-guts .reviews .row .posted-by .address {
   display: block;
 }
-/* line 595, ../sass/_deals.scss */
+/* line 615, ../sass/_deals.scss */
 .deal-guts .reviews .row.review p {
   width: 85%;
   margin: 0;
 }
-/* line 599, ../sass/_deals.scss */
+/* line 619, ../sass/_deals.scss */
 .deal-guts .reviews .row.review p span {
   display: none;
 }
-/* line 604, ../sass/_deals.scss */
+/* line 624, ../sass/_deals.scss */
 .deal-guts .reviews .row.review .posted-by {
   color: #c1c0c0;
 }
-/* line 613, ../sass/_deals.scss */
+/* line 633, ../sass/_deals.scss */
 .deal-guts .reviews .row:nth-of-type(4) .overall img, .deal-guts .reviews .row:nth-of-type(4) .enjoyed-most img, .deal-guts .reviews .row:nth-of-type(4) .other-comments img, .deal-guts .reviews .row:nth-of-type(4) .posted-by img {
   transform: rotateX(180deg);
 }
 
-/* line 622, ../sass/_deals.scss */
+/* line 642, ../sass/_deals.scss */
 .show-me {
   display: block !important;
 }
 
-/* line 626, ../sass/_deals.scss */
+/* line 646, ../sass/_deals.scss */
 .need-help {
   clear: both;
   display: none;
 }
-/* line 633, ../sass/_deals.scss */
+/* line 653, ../sass/_deals.scss */
 .need-help h6 {
   margin: 0 0 1rem 0;
 }
-/* line 639, ../sass/_deals.scss */
+/* line 659, ../sass/_deals.scss */
 .need-help ul li {
   display: inline-block;
   margin: 0 4rem 0 0;
 }
-/* line 643, ../sass/_deals.scss */
+/* line 663, ../sass/_deals.scss */
 .need-help ul li:last-of-type {
   margin: 0;
 }
-/* line 647, ../sass/_deals.scss */
+/* line 667, ../sass/_deals.scss */
 .need-help ul li a, .need-help ul li a:hover, .need-help ul li a:active, .need-help ul li a:visited, .need-help ul li a:link {
   color: #0078ef;
 }
-/* line 653, ../sass/_deals.scss */
+/* line 673, ../sass/_deals.scss */
 .need-help div {
   font-size: 1.2rem;
   margin: 0.5rem 0 0 0;
 }
 
-/* line 659, ../sass/_deals.scss */
+/* line 679, ../sass/_deals.scss */
 .more-vacations {
   clear: both;
   margin: 3rem 0 0 0;
 }
-/* line 663, ../sass/_deals.scss */
+/* line 683, ../sass/_deals.scss */
 .more-vacations .vacations-intro {
   position: relative;
   margin: 0 0 3rem 0;
 }
-/* line 667, ../sass/_deals.scss */
+/* line 687, ../sass/_deals.scss */
 .more-vacations .vacations-intro div {
   text-align: center;
   text-transform: uppercase;
@@ -2061,7 +2081,7 @@ p {
   position: relative;
   z-index: 2;
 }
-/* line 680, ../sass/_deals.scss */
+/* line 700, ../sass/_deals.scss */
 .more-vacations .vacations-intro .hr {
   width: 100%;
   display: block;
@@ -2071,74 +2091,74 @@ p {
   top: 1rem;
   z-index: 1;
 }
-/* line 693, ../sass/_deals.scss */
+/* line 713, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation {
   clear: left;
   margin: 0 0 1rem 0;
   float: left;
 }
-/* line 698, ../sass/_deals.scss */
+/* line 718, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .image {
   width: 50.5rem;
   width: calc(50.244% - 1rem);
   float: left;
 }
-/* line 704, ../sass/_deals.scss */
+/* line 724, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy {
   width: 50rem;
   width: calc(49.515% - 1rem);
   float: left;
   margin: 2rem 0 0 2rem;
 }
-/* line 710, ../sass/_deals.scss */
+/* line 730, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .price, .more-vacations .vacations-wrapper .vacation .copy .title {
   font-size: 2.1rem;
   color: #0078ef;
   font-weight: 400;
 }
-/* line 716, ../sass/_deals.scss */
+/* line 736, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .title {
   color: #000;
   line-height: 1.1;
   margin: 0.5rem 0;
 }
-/* line 723, ../sass/_deals.scss */
+/* line 743, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .location {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
 }
-/* line 730, ../sass/_deals.scss */
+/* line 750, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .description {
   margin: 2rem 0 0;
 }
-/* line 734, ../sass/_deals.scss */
+/* line 754, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .source {
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 739, ../sass/_deals.scss */
+/* line 759, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .source a, .more-vacations .vacations-wrapper .vacation .copy .source a:hover, .more-vacations .vacations-wrapper .vacation .copy .source a:active, .more-vacations .vacations-wrapper .vacation .copy .source a:visited, .more-vacations .vacations-wrapper .vacation .copy .source a:link {
   color: #000;
 }
-/* line 744, ../sass/_deals.scss */
+/* line 764, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .link {
   text-transform: uppercase;
   margin: 2rem 0 0;
 }
-/* line 748, ../sass/_deals.scss */
+/* line 768, ../sass/_deals.scss */
 .more-vacations .vacations-wrapper .vacation .copy .link a, .more-vacations .vacations-wrapper .vacation .copy .link a:hover, .more-vacations .vacations-wrapper .vacation .copy .link a:active, .more-vacations .vacations-wrapper .vacation .copy .link a:visited, .more-vacations .vacations-wrapper .vacation .copy .link a:link {
   color: #0078ef;
   text-decoration: underline;
 }
 
-/* line 758, ../sass/_deals.scss */
+/* line 778, ../sass/_deals.scss */
 .more-deals {
   top: 1rem;
 }
-/* line 761, ../sass/_deals.scss */
+/* line 781, ../sass/_deals.scss */
 .more-deals div {
   color: #0078ef;
   font-size: 1.8rem;
@@ -2151,18 +2171,18 @@ p {
   font-weight: 300;
 }
 
-/* line 774, ../sass/_deals.scss */
+/* line 794, ../sass/_deals.scss */
 .great-deals {
   float: left;
   clear: both;
   margin: 0 0 4rem 0;
 }
-/* line 779, ../sass/_deals.scss */
+/* line 799, ../sass/_deals.scss */
 .great-deals .great-deals-intro {
   position: relative;
   margin: 0 0 3rem 0;
 }
-/* line 783, ../sass/_deals.scss */
+/* line 803, ../sass/_deals.scss */
 .great-deals .great-deals-intro div {
   text-align: center;
   text-transform: uppercase;
@@ -2175,7 +2195,7 @@ p {
   position: relative;
   z-index: 2;
 }
-/* line 796, ../sass/_deals.scss */
+/* line 816, ../sass/_deals.scss */
 .great-deals .great-deals-intro .hr {
   width: 100%;
   display: block;
@@ -2185,27 +2205,27 @@ p {
   top: 1rem;
   z-index: 1;
 }
-/* line 809, ../sass/_deals.scss */
+/* line 829, ../sass/_deals.scss */
 .great-deals .grid ul {
   text-align: center;
 }
-/* line 812, ../sass/_deals.scss */
+/* line 832, ../sass/_deals.scss */
 .great-deals .grid ul li {
   margin: 0 0 0 2rem;
   float: left;
   width: calc(20% - 1.6rem);
 }
-/* line 817, ../sass/_deals.scss */
+/* line 837, ../sass/_deals.scss */
 .great-deals .grid ul li:nth-of-type(1), .great-deals .grid ul li:nth-of-type(6) {
   margin: 0;
 }
-/* line 821, ../sass/_deals.scss */
+/* line 841, ../sass/_deals.scss */
 .great-deals .grid ul li img {
   margin: 0 0 1.5rem 0;
   width: 100%;
 }
 
-/* line 832, ../sass/_deals.scss */
+/* line 852, ../sass/_deals.scss */
 .grid-overlay {
   position: fixed;
   top: 0;
@@ -2219,12 +2239,12 @@ p {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 845, ../sass/_deals.scss */
+/* line 865, ../sass/_deals.scss */
 .grid-overlay.grid-on {
   opacity: 0.35;
   z-index: 999;
 }
-/* line 850, ../sass/_deals.scss */
+/* line 870, ../sass/_deals.scss */
 .grid-overlay div {
   background: pink;
   margin: 0 2rem 0 0;
@@ -2232,7 +2252,7 @@ p {
   height: 100vh;
   float: left;
 }
-/* line 857, ../sass/_deals.scss */
+/* line 877, ../sass/_deals.scss */
 .grid-overlay div:first-of-type {
   margin-left: 2rem;
 }
