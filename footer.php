@@ -120,6 +120,7 @@
  --><script type="text/javascript" src="js/chosen/chosen-mods.jquery.js"></script>
 <script type="text/javascript" src="js/chosen/imageselect.jquery.js"></script>
 <script type="text/javascript" src="js/chosen/jquery.auto-complete.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
