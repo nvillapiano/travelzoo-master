@@ -1,15 +1,15 @@
 // Chosen
-$(".deals").chosen({
-	placeholder_text_single: "Find Deals on Travel"
-});
-$('.deals').on('change', function(evt, params) {
-	$(".arrow").addClass('arrow-focus');
-    $(".input-arrow").addClass('flip');
-});
+// $(".deals").chosen({
+// 	placeholder_text_single: "Find Deals on Travel"
+// });
+// $('.deals').on('change', function(evt, params) {
+// 	$(".arrow").addClass('arrow-focus');
+//     $(".input-arrow").addClass('flip');
+// });
 // Focus callback failing. Workaround.
-$(".chosen-results").click(function(){
-	$(".destinations").focus();   
-});
+// $(".chosen-results").click(function(){
+// 	$(".destinations").focus();   
+// });
 // AutoComplete
 $(function(){
     $('.destinations').autoComplete({
@@ -17,19 +17,10 @@ $(function(){
         source: function(term, suggest){
             term = term.toLowerCase();
             var choices = [
-            	'Near Me',
-            	'Caribbean', 
-            	'Mexico', 
-            	'Europe', 
-            	'Hawaii', 
-            	'Las Vegas', 
-            	'Florida', 
-            	'Napa Valley', 
-            	'New York City', 
-            	'California', 
-            	'Paris', 
-            	'Italy', 
-            	'France' 
+                'Paris',                                                
+                'Thailand', 
+                'South America',
+                'Near Me',
             	];
             var suggestions = [];
             for (i=0;i<choices.length;i++)
@@ -53,10 +44,14 @@ $('.destinations').on('focus', function(evt, params) {
 });
 $('.destinations').on('blur', function(evt, params) {
     $(".input-arrow").removeClass('flip');
+    $(".paris").removeClass('paris-show');
+    $('.arrow').removeClass('arrow-focus');      
 });
 
 $('.destinations').on('change', function(evt, params) {
     $(".input-arrow").removeClass('flip');
+    $(".paris").removeClass('paris-show');  
+    $('.arrow').removeClass('arrow-focus'); 
 });
 
 // Deals tabs
@@ -98,5 +93,18 @@ $('a.flag').click(function(){
     $('.grid-overlay').toggleClass('grid-on')
 });
 
+// Paris
+$(".destinations").keypress(function(){
+    $('.arrow').addClass('arrow-focus');                    
+    setTimeout(
+        function() {
+            $('.paris').addClass('paris-show');
+        },
+    800);
+});
+
+$(".deals").select2({
+  minimumResultsForSearch: Infinity
+});
 
 

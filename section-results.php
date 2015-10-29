@@ -2,11 +2,11 @@
 
 	<section class="deals-hero">
 		<div class="input1">
-			<span>Find Deals for Flights</span>
+			<span>Where do you want to go today?</span>
 			<img src="images/arrow-down.svg" alt="Arrow">
 		</div>
 		<div class="input2">
-			<span>All Destinations</span>
+			<span>All Deals</span>
 		</div>
 		<div class="deals-arrow">
 			<img src="images/arrow.svg" alt="Arrow">
@@ -14,6 +14,10 @@
 		<div class="input-mobile">
 			<span>Find Deals &amp; Destinations</span>
 			<img src="images/arrow.svg" alt="arrow">
+		</div>
+
+		<div class="paris-fpo show">
+			<img src="images/paris-fpo.png" alt="paris fpo">
 		</div>
 	</section>
 	

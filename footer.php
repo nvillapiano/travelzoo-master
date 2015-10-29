@@ -11,9 +11,6 @@
 				<li>
 					<a href="#">Site Map</a>
 				</li>
-				<li>
-					<a href="#">See all Restaurant, Spa and Activity Deals</a>
-				</li>
 			</ul>
 		</nav>
 
@@ -99,9 +96,6 @@
 				<li>
 					<a href="#">Site Map</a>
 				</li>
-				<li>
-					<a href="#">See all Restaurant, Spa and Activity Deals</a>
-				</li>
 			</ul>	
 			<div class="colophon">
 				<div>
@@ -122,10 +116,11 @@
 	</footer>
 
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/prefixfree.min.js"></script>
-<script type="text/javascript" src="js/chosen/chosen-mods.jquery.js"></script>
+<!-- <script type="text/javascript" src="js/prefixfree.min.js"></script>
+ --><script type="text/javascript" src="js/chosen/chosen-mods.jquery.js"></script>
 <script type="text/javascript" src="js/chosen/imageselect.jquery.js"></script>
 <script type="text/javascript" src="js/chosen/jquery.auto-complete.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
