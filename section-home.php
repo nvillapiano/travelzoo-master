@@ -7,7 +7,51 @@
 
 		<div class="travel-bar">
 
-			<input type="text" name="Destinations" class="destinations" placeholder="Where do you want to go?">
+			<select name="Deals" class="deals" data-placeholder="All Deals" tabindex="1">
+ 				<option></option>			
+				<option selected value="all-deals">All Deals</option>
+				<option value="vacations">Vacations</option>
+				<option value="hotels">Hotels</option>
+				<option value="flights">Flights</option>
+				<option value="cruises">Cruises</option>
+				<option value="car-rentals">Car rentals</option>
+				<option value="local-deals">Local Deals</option>
+
+			</select>
+
+			<input type="text" name="Destinations" class="destinations" placeholder="Search for destinations & experiences">
+
+			<div class="text-animation-bar">
+				<div class="destination">
+					<div>
+						Tulum
+					</div>
+					<div>
+						Australia
+					</div>
+					<div>
+						Nha Trang
+					</div>
+					<div>
+						Scandinavia
+					</div>															
+				</div>
+
+				<div class="experience">
+					<div>
+						Scuba
+					</div>
+					<div>
+						Honeymoon
+					</div>
+					<div>
+						Medieval towns
+					</div>
+					<div>
+						Tropical weather
+					</div>																				
+				</div>
+			</div>
 
 			<div class="paris">
 
@@ -43,24 +87,6 @@
 				</footer>
 				
 			</div>
-
-			<select name="Deals" class="deals" data-placeholder="All Deals" tabindex="1">
- 				<option></option>			
-				<option selected value="all-deals">All Deals</option>
-				<option value="vacations">Vacations</option>
-				<option value="hotels">Hotels</option>
-				<option value="flights">Flights</option>
-				<option value="cruises">Cruises</option>
-				<option value="car-rentals">Car rentals</option>
-				<option value="spa">Spa</option>
-				<option value="shows-concerts-theater">Shows, Concerts, & Theater</option>
-				<option value="museums-art">Museums & Art</option>
-				<option value="sports-events">Sports events</option>
-				<option value="theme-parks">Theme Parks</option>
-				<option value="tours">Tours</option>
-
-			</select>
-
 
 			<div class="input-arrow">
 				<img src="images/arrow-down.svg" alt="Search carrot">
