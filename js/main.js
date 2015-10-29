@@ -44,12 +44,14 @@ $('.destinations').on('focus', function(evt, params) {
 });
 $('.destinations').on('blur', function(evt, params) {
     $(".input-arrow").removeClass('flip');
-    $(".paris").removeClass('paris-show');     
+    $(".paris").removeClass('paris-show');
+    $('.arrow').removeClass('arrow-focus');      
 });
 
 $('.destinations').on('change', function(evt, params) {
     $(".input-arrow").removeClass('flip');
-    $(".paris").removeClass('paris-show');    
+    $(".paris").removeClass('paris-show');  
+    $('.arrow').removeClass('arrow-focus'); 
 });
 
 // Deals tabs
